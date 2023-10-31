@@ -1,1 +1,2016 @@
-hola mundo
+
+
+
+
+DESARROLLO WEB EN ENTORNO SERVIDOR
+
+
+DEPARTAMENTO: INFORMÁTICA
+
+
+CICLO FORMATIVO: GRADO SUPERIOR
+TÍTULO: D.A.W.
+CURSO: 2º
+
+
+PROFESOR:  
+	Juan Pablo Domínguez Mayo
+
+
+
+
+Curso académico:2023/24
+ÍNDICE
+1 Introducción	5
+1.2 Identificación y datos básicos del MP	7
+1.3 Normativa aplicable	8
+2 Contexto Educativo del I.E.S. Alixar	10
+2.2 Características del centro	10
+2.3 Características del grupo	14
+2.4 Características del entorno productivo	15
+3 Planificación didáctica del curso 2023/24	17
+4 Competencias, objetivos y resultados de aprendizaje.	17
+4.2 Competencia general.	18
+4.3 Competencias profesionales, personales y sociales.	18
+4.4 Objetivos generales.	19
+4.5 Resultados de aprendizaje	21
+5 Contenidos.	22
+5.2 Unidades de Aprendizaje.	22
+5.2.1 UD 1: Introducción a la programación en entorno servidor.	22
+5.2.2 UD2:  Tecnología para generar códigos en lenguaje de marcas	23
+5.2.3 UD 3:  Plantillas para escribir códigos en lenguaje de marca.	24
+5.2.4 UD 4: Modelo vista controlador.	25
+En esta unidad, se explorará la implementación de una aplicación web utilizando el patrón Modelo-Vista-Controlador (MVC) con Java, específicamente a través del framework Spring Boot, para asegurar una clara separación entre la lógica de negocio y la presentación. Se discutirán los beneficios de esta separación y se analizarán las tecnologías y mecanismos asociados que facilitan la misma, como los controles del servidor y la generación dinámica de interfaces web	25
+5.2.5 UD 5: JPA para crear, leer, actualizar y eliminar datos	26
+En esta unidad, utilizando Spring Boot y la API de Java Persistence (JPA), se desarrollará una aplicación web que interactúa con una base de datos relacional para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Se abordará la configuración de conexiones a la base de datos, la ejecución de sentencias SQL y la gestión de transacciones. Se explorará la recuperación y edición de información desde y hacia la base de datos, así como la visualización de esta información en la interfaz web. web.	26
+5.2.6 UD 6: Mantenimiento del estado y Spring Security	27
+5.2.7 UD 7:  SOAP vs REST (Servicios Web con Java)	28
+5.2.8 UD 8:Generación de web dinámica	29
+5.2.9 UD 9: Microservicios	30
+5.2.10 Contenidos actitudinales.	31
+5.3 Secuencia de unidades de trabajo y distribución temporal	33
+5.4 Interdisciplinariedad	34
+5.5 Temas transversales y educación en valores.	36
+6 Metodología	38
+6.2 Aspectos generales. Principios metodológicos	38
+6.3 Concreción metodológica	42
+6.4 Recursos didácticos	45
+6.5 Actividades extraescolares y complementarias	46
+7 Criterios y procedimiento de evaluación.	47
+8 Evaluación	56
+8.2 Evaluación de la práctica docente	56
+8.2.1 Evaluación de la práctica docente	57
+8.2.2 Mejora de la programación didáctica	57
+8.3 Evaluación de Aprendizaje del alumnado	58
+8.3.1 Criterios de evaluación	59
+8.3.2 Tipos, momentos y procedimiento de evaluación	59
+8.3.3 Instrumentos de evaluación	61
+8.3.4 Calificación	61
+8.3.5 Recuperación y mejora de nota	63
+9 Medidas de Atención a la Diversidad	63
+9.2 Medidas generales de atención a la diversidad	63
+9.3 Atención al alumnado con Necesidades Educativas Especiales	65
+10 Formación Profesional DUAL	66
+10.2 Temporalización	67
+10.3 Formación inicial	67
+10.4 Formación en Alternancia en la Empresa	69
+10.5 Formación en Alternancia en el Centro educativo	71
+10.6 Renuncia FP	73
+11 Bibliografía	74
+
+Introducción
+
+Título de Técnico Superior en Desarrollo de Aplicaciones Web:
+El Real Decreto 686/2010, de 20 de Mayo, establece el Título de Técnico Superior en Desarrollo de Aplicaciones Web y las correspondientes enseñanzas mínimas (BOE núm. 143 de  12 de Junio de 2010).
+El módulo Desarrollo Web en Entorno Servidor es uno de los módulos profesionales del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Web, regulado por el Real Decreto 686/2010, 20 de Mayo, por el que se establecen las enseñanzas correspondientes al Título de Formación Profesional de Técnico Superior en Desarrollo de Aplicaciones Web.
+Según queda recogido en la Orden de 16 de junio de 2011 que define el título en el ámbito autonómico de Andalucía (BOJA núm. 149 de 1 de Agosto de 2011), este módulo profesional contiene parte de la formación necesaria para desempeñar la función de desarrollo de aplicaciones destinadas a su ejecución por servidores en entornos web.
+La función de desarrollo de aplicaciones para servidores web incluye aspectos como:
+La creación de aplicaciones de servidor que generan interfaces Web como resultado de su ejecución.
+La programación de métodos para almacenar, recuperar y gestionar mediante documentos Web información disponible en almacenes de datos.
+La generación de servicios reutilizables y accesibles mediante protocolos Web.
+El desarrollo de aplicaciones basadas en información y funcionalidades distribuidas.
+Las actividades profesionales asociadas a esta función se aplican en el desarrollo y la adaptación de servicios y aplicaciones para servidores de aplicaciones y servidores Web.
+Asimismo, en dicha Orden se establecen las líneas de actuación en el proceso enseñanza aprendizaje que permiten alcanzar los objetivos del módulo. Dichas líneas de actuación versarán sobre:
+El análisis de los métodos de generación dinámica de documentos Web.
+La integración del lenguaje de marcas con el código ejecutable en el servidor Web.
+El análisis, diferenciación y clasificación de las características y funcionalidades incorporadas en los entornos y lenguajes de programación de los servidores Web más difundidos.
+La utilización de características y funcionalidades específicas de los lenguajes de programación seleccionados.
+La modificación del código existente en soluciones Web heterogéneas para su adaptación a entornos específicos.
+El análisis y la utilización de funcionalidades aportadas por librerías generales y específicas de programación web en entorno servidor.
+La utilización de librerías para incorporar interactividad a los documentos Web generados de forma dinámica.
+El módulo profesional cuenta con una atribución horaria de 168 horas, a razón de 8 horas semanales.
+El módulo profesional, debido a lo extenso de sus contenidos, a la enorme importancia que tiene en la adquisición de las capacidades terminales del ciclo formativo y a su encuadre temporal en el segundo curso, se desglosa en 8 unidades didácticas.
+Cada una de las unidades didácticas presenta los objetivos, criterios de evaluación y algunas orientaciones sobre cómo trabajar la unidad y sobre los recursos para el desarrollo de las actividades.
+
+Identificación y datos básicos del MP
+
+Toda la información básica del Módulo Profesional de Desarrollo Web en Entorno Servidor se encuentra recogida en la siguiente tabla:
+Descripción
+Código
+0613
+Módulo Profesional
+Desarrollo Web en Entorno Servidor.
+Familia Profesional
+Informática y Comunicaciones
+Título
+Técnico en Desarrollo de Aplicaciones Web
+Grado
+Superior
+Curso
+2º
+Horas
+168
+Horas Semanales
+8
+Asociado a UC:
+UC0492_3 Desarrollar elementos software en el entorno servidor.
+Transversal
+No
+Soporte
+No
+
+ Tabla Identificación y datos básicos del MP
+Un módulo es transversal cuando es impartido en más de un ciclo. Por ejemplo, los módulos de 1º de DAM y DAW. No significa lo mismo que los módulos profesionales con formación transversal. 
+Asimismo, un módulo es de soporte cuando es de 1º y contiene la formación necesaria para que el alumno adquiera en 2º la formación de un módulo asociado a una competencia. En el anexo III de la orden se indican los módulos que son formación básica o soporte.
+
+Normativa aplicable
+A nivel normativo, esta Programación didáctica está referenciada a los dos ámbitos normativos: tanto a la normativa Estatal como a la Normativa Autonómica. Además, tiene en cuenta los cuatro temas fundamentales: Ordenación, Perfil Profesional, Título y Evaluación.
+Indicar antes de nada que no existe normativa relacionada con el Perfil Profesional a nivel autonómico puesto que la vinculación del Título con el Perfil Profesional es competencia exclusivamente nacional a través del Instituto Nacional de las Cualificaciones, dependiente del Ministerio de Educación.
+De la misma forma, no existe normativa de referencia a nivel estatal en el ámbito de la Evaluación, puesto que las competencias en esta materia recaen exclusivamente en la Consejería de Educación.
+De forma sintetizada la normativa de referencia para esta Programación Didáctica se encuentra recogida en la siguiente tabla:
+
+
+Estatal
+Autonómica
+Ordenación
+Ley Orgánica 2/2006, de 3 de mayo, de Educación modificada por ley Orgánica 8/2013, de 9 de diciembre, para la mejora de la calidad educativa.
+Real Decreto 1147/2011, de 29 de julio, por el que se establece la ordenación general de la formación profesional del sistema educativo.
+Ley 17/2007, de 10 de diciembre, de Educación de Andalucía.
+Decreto 327/2010, de 13 de julio, por el que se aprueba el Reglamento Orgánico de los Institutos de Educación Secundaria.
+Perfil Profesional
+Ley Orgánica 5/2002 de 19 de junio, de las Cualificaciones y de la Formación Profesional que pone en marcha del Sistema Nacional de Cualificaciones y Formación Profesional.
+Real Decreto 1416/2005 de 25 de noviembre, sobre el Catálogo Nacional de Cualificaciones Profesionales.
+Real  Decreto 295/2004, de 20 de febrero, y modificada en el Real Decreto 109/2008, de 1 de febrero.
+ (No existe normativa aplicable a nivel autonómico al no tener competencias nuestra Comunidad Autónoma).
+Título
+Real Decreto 686/2010, de 20 de mayo, por el que se establece el título de Técnico Superior en Desarrollo de Aplicaciones Web y se fijan sus enseñanzas mínimas.
+ORDEN de 16 de junio de 2011, por la que se desarrolla el currículo correspondiente al título de Técnico Superior en Desarrollo de Aplicaciones Web.
+Evaluación
+
+
+Orden de 29 de septiembre de 2010, por la que se regula la evaluación, certificación, acreditación y titulación académica del alumnado que cursa enseñanzas de formación profesional inicial que forma parte del sistema educativo en la Comunidad Autónoma de Andalucía.
+
+Tabla Normativa 
+
+Contexto Educativo del I.E.S. Alixar
+Características del centro
+El IES Alixar se encuentra dentro del término municipal de Castilleja de la Cuesta, el cual se encuadra en la comarca sevillana con mayor índice de concentración de núcleos poblacionales de la provincia de Sevilla: el Aljarafe. Encontrándonos con los términos municipales de menor superficie de la Baja Andalucía, llegando algunos núcleos de población a enlazarse territorialmente.
+Los Centros de Primaria adscritos al I.E.S, y que nutren de alumnos/as al centro para la E.S.O., son el C.E.I.P. Gloria Fuertes y el C.E.I.P Hernán Cortés, ambos de Nueva Sevilla y el 25 % del C.E.I.P. Juan XXIII, ubicado en el casco antiguo del pueblo. Las instalaciones, a pesar de ser algo antiguas, se encuentran en un buen estado de conservación. 
+El centro cuenta con unos 1000 alumnos/as, de los que aproximadamente el 33% son de ciclos formativos, cursando diversas enseñanzas en horario de mañana, en jornada de 8:15 a 14:45 horas y en horario de tarde, de 15:15 a 21:30 horas Este hecho hace que el centro permanezca abierto ininterrumpidamente de las 8:15 hasta las 21:30 horas.
+El edificio fue construido en una primera fase en 1985 y, con posterioridad, fue ampliado, para la implantación de la L.O.G.S.E., en 1996. Consta de dos edificios principales, separados por patios y dispone de las siguientes dependencias:
+Aulas ordinarias.
+1 aula polivalente.
+6 aulas reducidas.
+1 aula de Dibujo.
+3 laboratorios.
+2 aulas-laboratorio para la Familia de Sanidad.
+1 aula de Tecnología.
+4 aulas de Informática.
+1 aula de Música.
+1 Biblioteca.
+1 Sala de usos múltiples.
+5 despachos.
+1 Secretaría y Archivo.
+1 Sala de Profesores.
+8 despachos para Departamentos.
+1 despacho para tutorías.
+2 pistas polideportivas.
+El claustro está formado por cerca de un centenar de profesores/as.
+El Equipo Directivo está integrado por el director, vicedirectora, jefe de Estudios con dos adjuntos a la Jefatura y secretaria.
+Las enseñanzas que se imparten en el I.E.S. Alixar son:
+Educación Secundaria Obligatoria:
+Primer ciclo de E.S.O:	1º y 2º curso.
+Segundo ciclo de E.S.O: 3º y 4º curso.
+Bachillerato en las modalidades de:
+Ciencias y Tecnología.
+Humanidades y Ciencias Sociales.
+Formación Profesional de Grado Medio:
+Farmacia y Parafarmacia.
+Sistemas Microinformáticos y Redes.
+Formación Profesional de Grado Superior: Desarrollo Aplicaciones Web.
+Salud Ambiental.
+Laboratorio de Diagnóstico Clínico.
+En cada curso académico se ponen en marcha diferentes Programas Educativos:
+Proyecto de Escuela TIC 2.0 para hacer de las tecnologías de la información y comunicación una herramienta fundamental del proceso de enseñanza y aprendizaje.
+Plan de Compensación Educativa, que consiste en el desarrollo de actividades tendentes a compensar el desfase curricular y procurar la integración escolar del alumnado en situación de desventaja socioeducativa por pertenecer a minorías étnicas o culturales en una situación desfavorecida que les dificulta el poder seguir un proceso normalizado de escolarización. Está destinado a aprovechar lo mejor de cada alumno/a y a facilitar la integración de todos en nuestra comunidad educativa.
+Plan Lector y Biblioteca, que tiene como objetivo facilitar a los alumnos/as el desarrollo de prácticas lectoras y habilidades intelectuales e incorporen el uso regular de la biblioteca escolar como recurso de apoyo para el aprendizaje permanente.
+Programa de Coeducación, se plantea como objetivo promover el desarrollo de la coeducación en los centros docentes con la finalidad de educar en igualdad, sin discriminación por razones de sexo y prevenir sus consecuencias.
+Red de escuelas asociadas a la UNESCO, que trata de fomentar la compresión internacional, la paz, el diálogo intercultural, el desarrollo sostenible y la puesta en práctica de la educación de calidad. 
+Educación Ambiental: ALDEA movilidad B, que pretende fomentar el respeto y cuidado del medio ambiente en nuestro alumnado con el objetivo de sensibilizarlo contra el cambio climático.
+Hábitos de Vida Saludable: Forma Joven, que pretende acercar a los espacios frecuentados por adolescentes y jóvenes, asesorías de información y formación, orientación y derivación a centros especializados cuando sea necesario, de forma individual y grupal, con el objetivo de desarrollar capacidades y habilidades de respuestas saludables, ante situaciones de riesgo o interrogantes que se presenten en esta etapa de la vida, para que ocio y salud sean compatibles.
+Programas Culturales: Vivir y Sentir el Patrimonio
+Escuela: Espacio de Paz contempla entre sus objetivos apoyar de proyectos educativos integrales de Cultura de Paz y No violencia, dirigidos a la prevención de la violencia.
+Finalmente, la proximidad con Sevilla capital permite al IES Alixar organizar múltiples salidas y actividades culturales con nuestros alumnos/as.
+Disponemos para los alumnos del ciclo de DAW de dos aulas de informática equipadas con un equipo por alumno para 1º y 2º respectivamente, además de tener equipos con los mismos requisitos en caso de fallo, junto a equipos de dotaciones anteriores que nos van a permitir realizar prácticas en el aula.
+Ambas aulas cuentan con infraestructura de red cableada y wifi independientes con salida a internet. Los equipos de ambas aulas disponen de interfaz wifi que permita conectarlos a la red inalámbrica.
+Disponemos también en el departamento de informática de dos redes wifi independientes con conexión a internet con distintos operadores.
+Estas infraestructuras nos garantizan las máximas garantías para disponer de acceso a internet ante posibles fallos puntuales de alguna de las conexiones.
+Las aulas cuentan también con un equipo para el profesor, pizarra digital y proyector y altavoces.
+Se dispone de una pequeña habitación para uso del departamento de informática, que se encuentra equipado con 2 equipos.
+Adicionalmente, se dispone de dos carros equipados portátiles.
+
+Características del grupo
+Hay 33 alumnos matriculados siendo 31 hombres y 2 mujeres en el grupo. Además ha habido 3 ampliaciones de matrícula de alumnado de primero (2 hombres y 1 mujer).
+De los 33 alumnos matriculados en 2º curso, hay 7 que no estarán en el aula, ya que solo les queda pendiente la FCT (4 alumnos) y/o el módulo profesional de Proyecto de desarrollo de aplicaciones web (6 alumnos).
+
+En cuanto a los tramos de edad, tienen edades comprendidas entre los 20 y los 26 años, salvo alguna excepción que supera ese rango.
+Existe diversidad cultural en el aula, y en su mayoría proceden de familias de clase media.
+El alumnado procede de los siguientes lugares de residencia:
+Castilleja de la Cuesta: 5%
+Aljarafe: 80%
+Sevilla Capital: 5%
+Otros municipios: 10%
+La mayoría de estos lugares están ubicados en un radio de entre 1-20 kilómetros.
+Su forma de desplazarse desde su lugar de residencia al centro es mayoritariamente mediante transporte privado individual (60%), después hay un 15% del alumnado que usa transporte público, otro 15% comparte transporte privado y un 10% otro tipo de movilidad (bicis, patinetes, caminar,...).
+En cuanto a su procedencia académica:
+CFGM SMR: 35%
+Bachillerato: 30%
+Estudios universitarios incompletos: 15%
+CFGS DAM: 10%
+CFGM de otras familias profesionales: 5%
+CFGS de otras familias profesionales: 2.5%
+Titulación Universitaria: 2.5%
+Características del entorno productivo
+Nuestro centro se encuentra en Castilleja de la Cuesta es un pequeño término municipal de la zona periurbana de Sevilla, con una extensión de 2,18 km2, una altitud de 96 m sobre el nivel del mar y a 5 km de distancia de Sevilla.
+En general existe una adecuada red de comunicación Inter comarcal y en particular con Sevilla capital, gracias a la existencia de la carretera nacional Sevilla/Huelva y la Autovía A-49 y red de transporte metropolitano. Estas características, unidas a la de su altitud con respecto a Sevilla, que le proporciona un clima más benigno, convierten a la comarca en un lugar de residencia muy atractivo y apreciado por los sevillanos. Todos estos factores y el menor coste de la vivienda, ha provocado en las últimas décadas la elección del Aljarafe como lugar de residencia de un creciente número de ciudadanos que se instalan en las nuevas urbanizaciones creadas para tal fin, lo que, lógicamente, repercute en el número de alumnos que pueden y solicitan como 1º opción, acceder a nuestras aulas.
+La ubicación del I.E.S. Alixar está en la barriada de Nueva Sevilla, concretamente en la Avenida de la Unidad s/n. En sus alrededores se encuentran el Centro de Salud de Castilleja, el estadio de Nueva Sevilla y un cuartel para la Guardia Civil y la Policía Local.
+Para desarrollar el currículo de los ciclos formativos de la Familia a la realidad del I.E.S. Alixar es importante tener en cuenta las empresas del sector que existen en el entorno del centro que son en las que los alumnos/as van a realizar su Formación en Centros de Trabajo (F.C.T.) y la modalidad DUAL. En este sentido, hay que señalar los siguientes centros:
+Hospitales públicos: Hospitales Universitario Virgen Macarena, Virgen del Rocío y Virgen de Valme, mediante la empresa 
+TEKNOSERVICE de Bollullos del Condado.
+Ayuntamientos: Castilleja de la Cuesta, Gines, Benacazón
+Ayesa.
+C&G IT solutions.
+NTT Data
+Deloitte
+Accenture
+Iturri Forward.
+
+Planificación didáctica del curso 2023/24 
+La planificación de la actividad docente resulta imprescindible para cumplir tanto con lo estipulado por la normativa, como por la necesidad de adecuar dicho marco normativo a cada contexto particular.
+En lo referente al proceso de planificación didáctica, se establecen los siguientes niveles de concreción:
+Planificación curricular, realizada y revisada por la comisión de coordinación pedagógica.
+Programación didáctica (detallada en el presente documento), realizada por los equipos docentes del departamento.
+Programación de aula, realizada por el profesorado para su tarea cotidiana.
+Por los motivos especificados, la programación didáctica detallada en el presente documento, se complementará con la debida programación de aula, que será flexible y adecuada durante el curso, con contenidos concretos distribuidos por sesiones individuales, con ejercicios y fechas exactas, y actividades complementarias para situaciones que requieran adaptaciones específicas. Esto implica que cada docente deberá acomodar las programaciones de aula a los diferentes ritmos y estilos de aprendizaje, y podrá ofrecer por lo tanto al grupo una gran diversidad de actividades y métodos de explicación. Además, dicha autonomía de los docentes dentro de sus aulas, les permitirá añadir a su criterio cualquier material que consideren necesario para complementar la formación de los alumnos.
+Competencias, objetivos y resultados de aprendizaje.
+Las competencias están íntimamente relacionadas con la Cualificación Profesional puesto que forman parte de ella, de manera que pertenecen al ámbito profesional. Así, podemos entender la Cualificación Profesional como el conjunto de competencias profesionales (conocimientos y capacidades) que permiten dar respuesta a ocupaciones y puestos de trabajo con valor en mercado laboral, y que pueden adquirirse a través de formación o por experiencia laboral.
+
+Competencia general.
+Según el Real Decreto 686/2010, de 20 de mayo, el título de Técnico Superior en Desarrollo de Aplicaciones Web proporciona la siguiente Competencia general:
+“La competencia general de este título consiste en desarrollar, implantar, y mantener aplicaciones web, con independencia del modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos de forma segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.”
+La formación del módulo contribuye a alcanzar las competencias profesionales, personales y sociales que se indican en los siguientes subapartados.
+
+Competencias profesionales, personales y sociales.
+Desglosamos las Competencias Profesionales, Personales y Sociales a las que contribuye este módulo, según la orden de este ciclo formativo, si bien a alguna de ellas se contribuye muy tangencialmente y entran de lleno en el ámbito específico de otros módulos profesionales del ciclo.
+Relación de Competencias profesionales, personales y sociales,  respetando la letra con la que se relaciona en la Orden que regula el ciclo de DAW en Andalucía: 
+c) Gestionar servidores de aplicaciones adaptando su configuración en cada caso para permitir el despliegue de aplicaciones Web. 
+d) Gestionar bases de datos, interpretando su diseño lógico y verificando integridad, consistencia, seguridad y accesibilidad de los datos. 
+f) Integrar contenidos en la lógica de una aplicación web, desarrollando componentes de acceso a datos adecuados a las especificaciones. 
+g) Desarrollar interfaces en aplicaciones web de acuerdo con un manual de estilo, utilizando lenguajes de marcas y estándares Web. 
+h) Desarrollar componentes multimedia para su integración en aplicaciones web, empleando herramientas específicas y siguiendo las especificaciones establecidas. 
+k) Desarrollar servicios para integrar sus funciones en otras aplicaciones web, asegurando su funcionalidad. 
+l) Integrar servicios y contenidos distribuidos en aplicaciones web, asegurando su funcionalidad. 
+m) Completar planes de pruebas verificando el funcionamiento de los componentes software desarrollados, según las especificaciones. 
+n) Elaborar y mantener la documentación de los procesos de desarrollo, utilizando herramientas de generación de documentación y control de versiones. 
+ñ) Desplegar y distribuir aplicaciones web en distintos ámbitos de implantación, verificando su comportamiento y realizando modificaciones. 
+q) Resolver situaciones, problemas o contingencias con iniciativa y autonomía en el ámbito de su competencia, con creatividad, innovación y espíritu de mejora en el trabajo personal y en el de los miembros del equipo.
+
+Objetivos generales.
+Igual que ocurría en el caso de las competencias, desglosamos los Objetivos Generales a los que contribuye este módulo, según la orden de este ciclo formativo, si bien a alguno de ellos se contribuye muy tangencialmente y entran de lleno en el ámbito específico de otros módulos profesionales de cada ciclo.
+Relación de Objetivos generales, respetando la letra con la que se relaciona en la Orden que regula el ciclo de DAW en Andalucía: 
+c) Instalar módulos analizando su estructura y funcionalidad para gestionar servidores de aplicaciones. 
+d) Ajustar parámetros analizando la configuración para gestionar servidores de aplicaciones. 
+f) Seleccionar lenguajes, objetos y herramientas, interpretando las especificaciones para desarrollar aplicaciones web con acceso a bases de datos. 
+g) Utilizar lenguajes, objetos y herramientas, interpretando las especificaciones para desarrollar aplicaciones web con acceso a bases de datos. 
+h) Generar componentes de acceso a datos, cumpliendo las especificaciones, para integrar contenidos en la lógica de una aplicación Web. 
+l) Utilizar herramientas y lenguajes específicos, cumpliendo las especificaciones, para desarrollar e integrar componentes software en el entorno del servidor Web. 
+m) Emplear herramientas específicas, integrando la funcionalidad entre aplicaciones, para desarrollar servicios empleables en aplicaciones Web. 
+n) Evaluar servicios distribuidos ya desarrollados, verificando sus prestaciones y funcionalidad, para integrar servicios distribuidos en una aplicación Web. 
+ñ) Verificar los componentes de software desarrollados, analizando las especificaciones, para completar el plan de pruebas. 
+q) Programar y realizar actividades para gestionar el mantenimiento de los recursos informáticos. 
+s) Desarrollar la creatividad y el espíritu de innovación para responder a los retos que se presentan en los procesos y organización de trabajo y de la vida personal. 
+t) Tomar decisiones de forma fundamentada analizando las variables implicadas, integrando saberes de distinto ámbito y aceptando los riesgos y la posibilidad de equivocación en las mismas, para afrontar y resolver distintas situaciones, problemas o contingencias. 
+
+Resultados de aprendizaje
+
+Los Resultados de Aprendizaje (RA) son un conjunto de competencias contextualizadas en el ámbito educativo y que supone la concreción de los Objetivos Generales identificados para un Módulo Profesional concreto.
+Los Resultados de Aprendizaje están redactados en términos de una habilidad o destreza unida al objeto sobre el que se ha de desempeñar esa habilidad o destreza (el ámbito competencial), más una serie de acciones en el contexto del aprendizaje (el ámbito educativo). 
+Para nuestro Módulo Profesional, la normativa determina que los resultados de aprendizaje que tendrá que alcanzar el alumnado son los siguientes:
+
+
+Ámbito Competencial
+Ámbito Educativo
+RA
+Logro
+Objeto
+Acciones en el contexto aprendizaje
+1
+Selecciona
+Arquitecturas y tecnologías de programación Web en entorno servidor
+Analizando sus capacidades y características propias.
+2
+Escribe
+Sentencias ejecutables por un servidor Web
+Reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.
+3
+Escribe
+Bloques de sentencias embebidos en lenguajes de marcas
+Seleccionando y utilizando las estructuras de programación.
+4
+Desarrolla
+Aplicaciones Web embebidas en lenguajes de marcas
+Analizando e incorporando funcionalidades según especificaciones.
+5
+Desarrolla
+Aplicaciones Web
+Identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+6
+Desarrolla
+Aplicaciones de acceso a almacenes de datos
+Aplicando medidas para mantener la seguridad y la integridad de la información.
+7
+Desarrolla
+Servicios Web 
+Analizando su funcionamiento e implantando la estructura de sus componentes.
+8
+Genera
+Páginas Web dinámicas
+Analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas.
+9
+Desarrolla
+Aplicaciones Web híbridas
+Seleccionando y utilizando librerías de código y repositorios heterogéneos de información.
+
+Tabla Definición Resultados de Aprendizaje. 
+Contenidos.
+Unidades de Aprendizaje.
+A continuación, vamos a presentar la ficha resumen de cada una de las unidades de aprendizaje en las que vamos a abordar el módulo profesional y los resultados de aprendizaje que se van a adquirir en cada uno de ellos así como los criterios de evaluación con los que se va a valorar dicho aprendizaje. 
+UD 1: Introducción a la programación en entorno servidor.
+La arquitectura cliente/servidor es un modelo de operación fundamental en la computación donde dos partes, el cliente y el servidor, interactúan para llevar a cabo operaciones específicas. En esta unidad, se desglosan los elementos clave de esta arquitectura y cómo se interrelacionan en el desarrollo y la operación de aplicaciones web. 
+Como Lenguaje base se utilizará Java en el Entorno del Servidor: Java es ampliamente utilizado para el desarrollo en el servidor debido a su portabilidad, seguridad y robustez. Se utilizará Java Servlets y JavaServer Pages (JSP), para crear aplicaciones web dinámicas y eficientes.
+RA’s
+Contenidos
+1
+− Modelos de ejecución de código en entornos cliente/servidor.
+− Generación dinámica de páginas web.
+− Lenguajes de programación y tecnologías asociadas en entorno servidor.
+− Integración con los lenguajes de marcas.
+− Integración con los servidores web.
+− Herramientas y frameworks de programación. en entorno servidor.
+
+
+CRITERIOS DE EVALUACIÓN
+RA 1:
+Se han caracterizado y diferenciado los modelos de ejecución de código en el servidor y en el cliente Web. 
+Se han reconocido las ventajas que proporciona la generación dinámica de páginas Web y sus diferencias con la inclusión de sentencias de guiones en el interior de las páginas Web. 
+Se han identificado los mecanismos de ejecución de código en los servidores Web. 
+Se han reconocido las funcionalidades que aportan los servidores de aplicaciones y su integración con los servidores Web. 
+Se han identificado y caracterizado los principales lenguajes y tecnologías relacionados con la programación Web en entorno servidor. 
+Se han verificado los mecanismos de integración de los lenguajes de marcas con los lenguajes de programación en entorno servidor. 
+Se han reconocido y evaluado las herramientas de programación en entorno servidor.
+
+
+
+
+
+Para evaluar el resultado de aprendizaje 1 se realizará una prueba escrita 
+
+
+UD2:  Tecnología para generar códigos en lenguaje de marcas
+Utilizando JSP y JSTL, tecnologías de Java EE, se permite la inserción de código Java en HTML y se facilita la creación de páginas web dinámicas con bibliotecas de etiquetas extendidas. Estas tecnologías ayudan en la manipulación y conversión adecuada entre diferentes tipos de datos, mientras que las variables y operadores facilitan el almacenamiento y manipulación de datos. Los ámbitos de utilización definen la disponibilidad de variables en el código, contribuyendo a la organización y funcionalidad correcta de las aplicaciones web.
+RA’s
+Contenidos
+2
+− Tecnologías asociadas.
+− Obtención del lenguaje de marcas para mostrar en el cliente.
+− Etiquetas para inserción de código.
+− Tipos de datos. Conversiones entre tipos de datos.
+− Variables. Operadores. Ámbitos de utilización.
+
+
+CRITERIOS DE EVALUACIÓN
+RA 2. Escribe sentencias ejecutables por un servidor web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.
+Criterios de evaluación:
+a) Se han reconocido los mecanismos de generación de páginas web a partir de lenguajes de marcas con código embebido.
+b) Se han identificado las principales tecnologías asociadas.
+c) Se han utilizado etiquetas para la inclusión de código en el lenguaje de marcas.
+d) Se ha reconocido la sintaxis del lenguaje de programación que se ha de utilizar.
+e) Se han escrito sentencias simples y se han comprobado sus efectos en el documento resultante.
+f) Se han utilizado directivas para modificar el comportamiento predeterminado.
+g) Se han utilizado los distintos tipos de variables y operadores disponibles en el lenguaje.
+h) Se han identificado los ámbitos de utilización de las variables
+
+
+
+
+
+
+UD 3:  Plantillas para escribir códigos en lenguaje de marca.
+Thymeleaf: Thymeleaf es un motor de plantillas Java que se utiliza para la generación de contenido web dinámico. A diferencia de JSP, Thymeleaf se centra en la escritura de plantillas HTML en las que se pueden incrustar fácilmente expresiones y sentencias en lugar de mezclar código Java directamente en el HTML. Thymeleaf es especialmente popular en aplicaciones basadas en Spring Framework, donde se utiliza para crear vistas HTML dinámicas.
+RA’s
+Contenidos
+3
+Tomas de decisión.
+Bucles.
+Comentarios de cliente y de servidor.
+Tipos de datos compuestos.
+Arrays.
+Funciones.
+Paso de parámetros. Devolución de valores.
+Recuperación y utilización de información proveniente del cliente web.
+Interacción con el usuario: formularios.
+Procesamiento de la información introducida en un formulario.
+
+
+CRITERIOS DE EVALUACIÓN
+3. Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación.
+Criterios de evaluación:
+a) Se han utilizado mecanismos de decisión en la creación de bloques de sentencias.
+b) Se han utilizado bucles y se ha verificado su funcionamiento.
+c) Se han utilizado matrices (arrays) para almacenar y recuperar conjuntos de datos.
+d) Se han creado y utilizado funciones.
+e) Se han utilizado formularios web para interactuar con el usuario del navegador web.
+f) Se han empleado métodos para recuperar la información introducida en el formulario.
+g) Se han añadido comentarios al código
+
+
+
+
+
+UD 4: Modelo vista controlador.
+En esta unidad, se explorará la implementación de una aplicación web utilizando el patrón Modelo-Vista-Controlador (MVC) con Java, específicamente a través del framework Spring Boot, para asegurar una clara separación entre la lógica de negocio y la presentación. Se discutirán los beneficios de esta separación y se analizarán las tecnologías y mecanismos asociados que facilitan la misma, como los controles del servidor y la generación dinámica de interfaces web
+RA’s
+Contenidos
+5
+Mecanismos de separación de la lógica de negocio.
+Tecnologías asociadas.
+Controles de servidor.
+Mantenimiento del estado de los controles.
+Mecanismos de generación dinámica del interface web.
+CRITERIOS DE EVALUACIÓN
+5. Desarrolla aplicaciones web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+Criterios de evaluación:
+a) Se han identificado las ventajas de separar la lógica de negocio de los aspectos de presentación de la aplicación.
+b) Se han analizado y utilizado mecanismos y frameworks que permiten realizar esta separación y sus características principales.
+c) Se han utilizado objetos y controles en el servidor para generar el aspecto visual de la aplicación web en el cliente.
+d) Se han utilizado formularios generados de forma dinámica para responder a los eventos de la aplicación web.
+e) Se han identificado y aplicado los parámetros relativos a la configuración de la aplicación web.
+f) Se han escrito aplicaciones web con mantenimiento de estado y separación de la lógica de negocio.
+g) Se han aplicado los principios y patrones de diseño de la programación orientada a objetos.
+h) Se ha probado y documentado el código.
+
+
+
+UD 5: JPA para crear, leer, actualizar y eliminar datos
+En esta unidad, utilizando Spring Boot y la API de Java Persistence (JPA), se desarrollará una aplicación web que interactúa con una base de datos relacional para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Se abordará la configuración de conexiones a la base de datos, la ejecución de sentencias SQL y la gestión de transacciones. Se explorará la recuperación y edición de información desde y hacia la base de datos, así como la visualización de esta información en la interfaz web. web.
+RA’s
+Contenidos
+6
+Utilización de bases de datos relacionales.
+Establecimiento de conexiones.
+Recuperación y edición de información.
+Utilización de conjuntos de resultados.
+Visualización de la información en páginas web.
+Mecanismos de edición de la información en un cliente web.
+Ejecución de sentencias SQL.
+Transacciones.
+Utilización de otros orígenes de datos.
+Almacenes de información heterogéneos.
+CRITERIOS DE EVALUACIÓN
+6. Desarrolla aplicaciones web de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+Criterios de evaluación:
+a) Se han analizado las tecnologías que permiten el acceso mediante programación a la información disponible en almacenes de datos.
+b) Se han creado aplicaciones que establezcan conexiones con bases de datos.
+c) Se ha recuperado información almacenada en bases de datos.
+d) Se ha publicado en aplicaciones web la información recuperada.
+e) Se han utilizado conjuntos de datos para almacenar la información.
+f) Se han creado aplicaciones web que permitan la actualización y la eliminación de información disponible en una base de datos.
+g) Se han probado y documentado las aplicaciones web.
+
+
+
+UD 6: Mantenimiento del estado y Spring Security 
+En la Unidad 6, utilizando Spring Boot, se enfocará en el mantenimiento del estado y la seguridad en aplicaciones web. Se explorarán y aplicarán mecanismos para mantener el estado de una aplicación web, tales como sesiones y cookies, que permiten rastrear y almacenar información sobre un cliente web concreto a lo largo de múltiples interacciones. Se introducirá Spring Security para abordar aspectos cruciales de seguridad como la autentificación de usuarios, y la definición y gestión de perfiles, roles y permisos, asegurando que solo los usuarios autorizados puedan acceder a ciertas partes de la aplicación.
+RA’s
+Contenidos
+4
+Mantenimiento del estado.
+Sesiones.
+Cookies.
+Seguridad: usuarios, perfiles, roles.
+Autentificación de usuarios.
+Herramientas de programación.
+Pruebas y depuración.
+CRITERIOS DE EVALUACIÓN
+Desarrolla aplicaciones web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+Criterios de evaluación:
+a) Se han identificado los mecanismos disponibles para el mantenimiento de la información que concierne a un cliente web concreto y se han señalado sus ventajas.
+b) Se han utilizado mecanismos para mantener el estado de las aplicaciones web.
+c) Se han utilizado mecanismos para almacenar información en el cliente web y para recuperar su contenido.
+d) Se han identificado y caracterizado los mecanismos disponibles para la autentificación de usuarios.
+e) Se han escrito aplicaciones que integren mecanismos de autentificación de usuarios.
+f) Se han utilizado herramientas y entornos para facilitar la programación, prueba y depuración del código
+
+
+
+UD 7:  SOAP vs REST (Servicios Web con Java)
+
+En la Unidad 7, se va a abordar el desarrollo y consumo de servicios web utilizando Java, enfocándose en las arquitecturas SOAP (Protocolo Simple de Acceso a Objetos) y REST (Transferencia de Estado Representacional). Se explorarán las características, ventajas y ámbitos de aplicación de los servicios web, así como los mecanismos y protocolos involucrados en su desarrollo y consumo. Se proporcionará una comprensión detallada de las arquitecturas de programación orientadas a servicios, las cuales facilitan la creación de servicios web reutilizables y accesibles.
+RA’s
+Contenidos
+7
+Programación de servicios web:
+Arquitecturas de programación orientadas a servicios.
+Mecanismos y protocolos implicados.
+SOAP.
+Generación de un servicio web.
+Descripción del servicio.
+Interface de un servicio web.
+Utilización de un servicio web.
+CRITERIOS DE EVALUACIÓN
+
+RA7. Desarrolla servicios web reutilizables y accesibles mediante protocolos web, verificando su funcionamiento.
+Criterios de evaluación:
+a) Se han reconocido las características propias y el ámbito de aplicación de los servicios web.
+b) Se han reconocido las ventajas de utilizar servicios web para proporcionar acceso a funcionalidades incorporadas a la lógica de negocio de una aplicación.
+c) Se han identificado las tecnologías y los protocolos implicados en el consumo de servicios web.
+d) Se han utilizado los estándares y arquitecturas más difundidos e implicados en el desarrollo de servicios web.
+e) Se ha programado un servicio web.
+f) Se ha verificado el funcionamiento del servicio web.
+g) Se ha consumido el servicio web.
+h) Se ha documentado un servicio web.
+
+UD 8:Generación de web dinámica
+En la Unidad 8, se explorará la generación de páginas web dinámicas e interactivas, enfocándose en el procesamiento tanto del lado del servidor como del cliente. Se abordarán las diferencias clave entre la ejecución de código en el servidor y en el cliente web, y se destacarán las ventajas de integrar ambas tecnologías en el desarrollo de aplicaciones web.
+RA’s
+Contenidos
+
+
+ Generación dinámica de páginas web interactivas:
+Procesamiento en el servidor y en el cliente.
+Librerías y tecnologías relacionadas.
+Generación dinámica de páginas interactivas.
+Controles con verificación de información en el cliente.
+Obtención remota de información.
+Modificación de la estructura de la página web.
+CRITERIOS DE EVALUACIÓN
+
+RA8. Genera páginas web dinámicas analizando y utilizando tecnologías y frameworks del servidor web que añadan código al lenguaje de marcas.
+Criterios de evaluación:
+a) Se han identificado las diferencias entre la ejecución de código en el servidor y en el cliente web.
+b) Se han reconocido las ventajas de unir ambas tecnologías en el proceso de desarrollo de programas.
+c) Se han identificado las tecnologías y frameworks relacionadas con la generación por parte del servidor de páginas web con guiones embebidos.
+d) Se han utilizado estas tecnologías y frameworks para generar páginas web que incluyan interacción con el usuario.
+e) Se han utilizado estas tecnologías y frameworks, para generar páginas web que incluyan verificación de formularios.
+f) Se han utilizado estas tecnologías y frameworks para generar páginas web que incluyan modificación dinámica de su contenido y su estructura.
+g) Se han aplicado estas tecnologías y frameworks en la programación de aplicaciones web.
+
+
+UD 9: Microservicios
+En la Unidad 9, centrada en Microservicios, se abordará el desarrollo de aplicaciones web híbridas, una arquitectura que permite descomponer una aplicación en pequeños servicios independientes, cada uno ejecutándose en su propio proceso y comunicándose a través de APIs.
+RA’s
+Contenidos
+9
+ Desarrollo de aplicaciones web híbridas:
+Reutilización de código e información.
+Interfaces de programación de aplicaciones disponibles.
+Utilización de información proveniente de repositorios.
+Creación de repositorios a medida.
+Incorporación de funcionalidades específicas.
+CRITERIOS DE EVALUACIÓN
+
+RA9. Desarrolla aplicaciones web híbridas seleccionando y utilizando tecnologías, frameworks servidor y repositorios heterogéneos de información.
+
+Criterios de evaluación:
+a) Se han reconocido las ventajas que proporciona la reutilización de código y el aprovechamiento de información ya existente.
+b) Se han identificado tecnologías y frameworks aplicables en la creación de aplicaciones web híbridas.
+c) Se ha creado una aplicación web que recupere y procese repositorios de información ya existentes.
+d) Se han creado repositorios específicos a partir de información existente en almacenes de información.
+e) Se han utilizado librerías de código y frameworks para incorporar funcionalidades específicas a una aplicación web.
+f) Se han programado servicios y aplicaciones web utilizando como base información y código generados por terceros.
+g) Se han analizado y utilizado librerías de código relacionadas con Big Data e inteligencia de negocios, para incorporar análisis e inteligencia de datos proveniente de repositorios.
+h) Se han probado, depurado y documentado las aplicaciones generadas
+
+
+
+
+
+Contenidos actitudinales.
+
+Los contenidos actitudinales son compartidos por todas las unidades didácticas y se exponen en la siguiente tabla:
+CONTENIDOS ACTITUDINALES
+Actitud abierta, crítica, dialogante y participativa en un ambiente de trabajo en grupo.
+Actitud de respeto hacia los compañeros y profesores.
+Valoración de la importancia del mantenimiento, soporte técnico (presencial o a distancia) y de la asistencia a usuarios.
+Desarrollo de hábitos de actuación contemplando las medidas de seguridad.
+Iniciativa personal, creatividad y autonomía en el trabajo.
+Atención a la limpieza de los equipos, diverso material y a su mantenimiento.
+Habituarse a la utilización de términos profesionales propios del área técnica.
+Responsabilidad en la instalación y manejo de los componentes de un sistema informático.
+Responsabilidad en la organización de los datos para su uso por las aplicaciones.
+Hábito en el manejo de la documentación de usuario.
+Desarrollar la capacidad autodidacta en una disciplina tecnológica tan sometida a cambio.
+Relacionado con lo anterior, potenciar la adaptación a nuevos cambios en el entorno  laboral al respecto de metodologías de trabajo así como frameworks comerciales.
+Responsabilidad en la elaboración de configuraciones adecuadas a casos particulares. 
+Interés por los problemas básicos de seguridad y de las precauciones a tomar.
+Atención a la gestión de usuarios, gestión de los medios de almacenamiento de datos y a sus autorizaciones.
+Constancia en la documentación de problemas y soluciones.
+Atención a la seguridad de la información en la instalación de software.
+Apreciar el valor de las pruebas en el proceso del desarrollo de software y, especialmente, durante la fase de codificación.
+
+
+Secuencia de unidades de trabajo y distribución temporal
+
+A continuación se ha establecido una temporalización  y se ha asignado unas horas en función  de la complejidad en la adquisición de las competencias que se trabajan en cada unidad. Además se ha considerado la ponderación de cada Resultado de Aprendizaje para poder determinar cuál es la contribución de cada unidad a alcanzar el resultado de aprendizaje.
+Esto se recoge en la siguiente tabla:
+
+Distribución temporal y secuencia de unidades
+
+
+Unidad didáctica
+%
+Horas aprox
+Trim
+UD1: Introducción a la programación en entorno servidor.
+5
+5
+1º
+UD2: Tecnología para generar códigos en lenguaje de marcas
+10
+25
+1º
+UD3: Plantillas para escribir códigos en lenguaje de marca
+10
+22
+1º
+UD 4: Modelo vista controlador.
+10
+14
+1º
+UD 5: JPA para crear, leer, actualizar y eliminar datos
+10
+12
+1º
+UD 6: Mantenimiento del estado y Spring Security
+15
+23
+1º
+UD 7: SOAP vs REST (Servicios Web con Java)
+20
+23
+2º
+UD 8: Generando web dinámicas
+10
+16
+2º
+UD 9: Microservicios
+10
+24
+ 2º
+
+
+
+La temporización debe entenderse con carácter orientativo, ya que estará sujeta a la realimentación que proporcionen los propios alumnos, adaptando el ritmo según las necesidades.
+
+Interdisciplinariedad
+
+Hay que tener en cuenta que, para la asimilación de ciertos contenidos, son necesarios unos conocimientos íntimamente interconectados con los que serán adquiridos en otros módulos que se impartirán también durante el segundo curso del ciclo, con cuyo profesorado deberemos coordinarnos a lo largo del curso, como:
+Diseño de Interfaces Web y Desarrollo Web en Entorno Cliente: en este módulo nos harán falta conocimientos sobre arquitectura cliente-servidor y, especialmente sobre el consumo y el uso de datos en el lado del cliente.
+
+Despliegue de Aplicaciones Web: también harán falta conocimientos sobre despliegue de servicios y software apropiado para poder consumirlos. Especialmente interesante e importante los elementos relacionados con herramientas para documentación y gestión de código fuente en repositorios (GitHub) de cara a proporcionar al alumnado una dinámica de aula idéntica al contexto profesional donde desempeñarán su labor.
+
+Temas transversales y educación en valores.
+
+Al tratarse de un módulo perteneciente a un tipo de formación específica puede parecer que la relación con este tipo de temas es un poco tangencial. Sin embargo, si se procede a un análisis detenido, se puede observar que algunos de estos temas transversales se desarrollan así:
+Educación ambiental: la utilización de la informática, en general, y sobre todo en los negocios, hace que grandes volúmenes de información puedan ser almacenados en soportes informáticos, discos ópticos,... y enviados de unos lugares a otros a través de las redes informáticas, evitándose de esta manera el consumo de grandes cantidades de papel y, por consiguiente, la destrucción de bosques, contribuyendo de alguna manera a la preservación de los medios naturales y medio-ambientales.
+Educación del consumidor: el análisis y la utilización de diferentes herramientas informáticas favorecen la capacidad del alumnado para decidir sobre los productos informáticos que debe adquirir y utilizar de manera ventajosa.
+Educación para la salud: cuando se utilizan equipos informáticos se procura que el alumnado conozca una serie de normas de higiene y seguridad en el trabajo, así como sobre las precauciones necesarias en el empleo de los equipos. De esta manera, se intenta que el alumnado sepan los principios de la ergonomía del puesto de trabajo, para que cualquier trabajo frente al ordenador resulte lo más agradable posible y no le cause ningún problema.
+Educación para la igualdad de oportunidades entre ambos sexos: desde este módulo contamos con un profesorado mixto que permite concienciar al alumnado sobre la igualdad de oportunidades para alumnos y alumnas durante todo el curso. Aunque en este caso no hay alumnas, cuando las haya procuraremos atender a las siguientes orientaciones de trabajo:
+Crear grupos mixtos de trabajo.
+Distribuir tareas a realizar en la misma medida entre el alumnado de ambos sexos.
+Propiciar situaciones en las que todos utilicen los mismos equipos o equivalentes.
+Fomentar la participación de todos, sin distinciones de sexo.
+Educación para el trabajo: respecto a este módulo encontramos los siguientes elementos que se presentan en todas las unidades:
+Técnicas de trabajo en grupo: sujeción a unas reglas corporativas.
+Colaboración de varias personas para la realización de un único trabajo.
+Educación para la paz y la convivencia: Se trabajan los elementos siguientes durante todo el curso:
+Acuerdos para la utilización de los mismos estándares en toda la comunidad internacional.
+Trabajo en armoniosa colaboración.
+Respeto por las opiniones de los demás.
+Aprender a escuchar.
+Diseño en equipo del sistema de información de una empresa.
+
+Cultura andaluza: El currículo deberá contemplar la presencia de contenidos y de actividades relacionadas con el medio natural, la historia, la cultura y otros hechos diferenciadores de Andalucía, para que sean conocidos, valorados y respetados como patrimonio propio y en el marco de la cultura española y universal.
+
+Fomento de la Lectura. La comprensión lectora se considera un contenido con valor propio, pues se utiliza en todas las áreas y en todos los cursos, contemplándose como un proceso inacabado. La lectura deberá estimularse y ser llevada a cabo por todos los profesores que intervienen en el proceso educativo, desarrollando estrategias y técnicas eficaces de comprensión lectora como forma de acceso a la información, al conocimiento. También es fuente de placer, de fantasía. Se estipula que se deberá dedicar un tiempo diario a ella.
+
+La insistencia en la buena presentación de los trabajos, como también en la correcta y adecuada expresión, ayudan a conseguir hábitos necesarios en un profesional.
+Metodología 
+Aspectos generales. Principios metodológicos
+
+Con la reforma producida en la educación en España a través de la Ley Orgánica 1/1990 de Ordenación General del Sistema Educativo de España (en adelante, LOGSE) se introducen los postulados de las teorías constructivistas en la enseñanza. Ello supone que abandonamos un sistema que no difería mucho del que habían conocido nuestros padres y abuelos para introducirnos en una metodología activa que busca la formación basada en competencias.
+Pasamos de un modelo basado en la enseñanza, en la que el profesor es el único emisor de conocimiento y el papel del alumno se limita al de receptor de información, a un modelo basado en el aprendizaje, en el que el alumno toma parte activa del proceso de enseñanza y de evaluación, construyendo su propio aprendizaje. En este modelo de enseñanza la labor del profesor pasa por bajarse de la tarima magistral para, junto con el alumno, dirigir ese proceso de aprendizaje y guiarle para que pueda adquirir las competencias básicas que le permitan seguir aprendiendo a lo largo de la vida, esto se ha denominado “aprender a aprender”. Las profesiones y oficios ya no están tan definidos como antes y sufren continuos cambios parejos a la velocidad en la que evoluciona la sociedad. Lo anterior provoca la necesidad de que el trabajador haya de ser flexible y se encuentre con una permanente necesidad de aprender, pero la presencia del profesor no es algo de lo que vaya a disponer siempre, de ahí la necesidad de aprender a aprender, de ser capaz de realizar un aprendizaje independiente, de adquirir conocimientos instrumentales y actitudinales, además de los teóricos, que lo facilite.
+
+Figura Claves Aprendizaje Significativo
+Las técnicas o principios en los que nos hemos basado para desarrollar nuestra propuesta de metodología van regidas por el principio de conseguir que el alumnado logre aprendizajes significativos, entendiendo que estos aprendizajes se producen cuando la actividad e implicación es tal que les permite construir nuevos aprendizajes a partir de ellos y sobre todo que esos aprendizajes logrados son utilizados en contextos diferentes y ajenos al de aquel en el que se produjeron.
+Estas técnicas tienen como denominador común una búsqueda de aprendizajes más estables y transferibles. Su naturaleza es heurística y de forma sistemática contribuyen a capacitarse para ser autónomos en el aprendizaje e ir haciéndose más competente en lo que hoy se ha dado en llamar “aprender a aprender”.  Asimismo, comparten su orientación a la solución de problemas, sean estos de índole teórica o práctica.
+El aprendizaje basado en ejemplos: En esta técnica la finalidad es aproximar a los alumnos a los centros de su interés tratando de entroncar los temas a aprender con los contextos reales. Mediante los ejemplos los alumnos adquieren conocimientos y técnicas de razonamiento necesarias para el contexto curricular concreto. Mediante ellos el aprendiz afronta situaciones que o son o pueden ser reales. Situaciones complejas que le entrena en las habilidades propias de los profesionales del campo específico y les fuerza a utilizar el pensamiento como lo hacen ellos.
+El aprendizaje basado en problemas: En esta técnica el alumno ha de tomar conciencia de los diferentes pasos del proceso y la actividad cognitiva. Cada nuevo paso constituirá un avance o por el contrario un tropiezo que obligará a revisar y ordenar y regular incluso los pasos anteriormente adoptados. Nuestro módulo profesional puede comprenderse en términos de problemas.
+Aprendizaje Basado en Proyectos: El ABP (Aprendizaje basado en Proyectos) es un modelo de aprendizaje con el cual los estudiantes trabajan de manera activa, planean, implementan y evalúan proyectos que tienen aplicación en el mundo real más allá del aula de clase (Blank, 1997; Harwell, 1997; Martí, 2010). 
+A diferencia del aprendizaje basado en problemas, donde la atención se centra en la resolución de un problema particular, el ABP constituye una categoría de aprendizaje más amplia. El proyecto no se enfoca sólo en aprender acerca de algo, sino en hacer una tarea que resuelva un problema en la práctica. Una de las características principales del ABP es que está orientado a la acción, pues tal como dice un viejo proverbio chino: “Dígame y olvido, muéstreme y recuerdo, involúcreme y comprendo". 
+Los objetivos que se pretenden alcanzar con el ABP son: 
+Mejorar la habilidad para resolver problemas y desarrollar tareas complejas. 
+Mejorar la capacidad de trabajar en equipo. 
+Desarrollar las capacidades mentales de orden superior. 
+Promover una mayor responsabilidad por el aprendizaje propio. 
+Aprendizaje Cooperativo: Este tipo de actividades pueden contribuir a mejorar en muchos aspectos el proceso de aprendizaje de nuestros alumnos, de manera que, entre sus principales fortalezas podríamos citar las siguientes: 
+Promueve la implicación activa del estudiante en el proceso de aprendizaje. 
+Capitaliza la capacidad que tienen los grupos para incrementar el nivel de aprendizaje mediante la interacción entre compañeros. 
+Reduce los niveles de abandono de los estudios 
+Permite conseguir los objetivos de la enseñanza liberal y de la educación general. 
+Promueve el aprendizaje independiente y autodirigido. 
+Promueve el desarrollo de la capacidad para razonar de forma crítica. 
+Facilita el desarrollo de la habilidad para escribir con claridad. 
+Facilita el desarrollo de la capacidad de comunicación oral. 
+Incrementa la satisfacción de los estudiantes con la experiencia de aprendizaje y promueve actitudes más positivas hacia la materia de estudio. 
+Permite acomodar los diferentes estilos de aprendizaje de los estudiantes de hoy día. 
+Facilita un mayor rendimiento académico en las áreas de matemáticas, ciencia y tecnología. 
+Permite la preparación de los estudiantes como ciudadanos. 
+Permite desarrollar la capacidad de liderazgo. 
+Prepara a los estudiantes para el mundo del trabajo actual. 
+Promueve el aprendizaje entre iguales, coenseñanza o coaprendizaje, con el objetivo de que el alumno aprenda enseñando y ayudando a compañeros.
+De manera transversal a todas las técnicas o principios metodológicos aplicaremos las siguientes directrices al realizar la propuesta didáctica:
+Planteamiento de contenidos de manera iterativa e incremental, reincidiendo en los mismos conceptos con un grado de dificultad creciente e introduciendo nuevos contenidos y detallando los ya tratados en cada iteración.
+Mejora continua: a través de la aplicación en las dinámicas de trabajo del análisis retrospectivo de los resultados obtenidos de cara a identificar posibles mejoras a aplicar en iteraciones posteriores, intentaremos inculcar al alumnado de este ideal de excelencia y mejora continua en todos los ámbitos del trabajo realizado.
+Motivación: tendremos como referente en todo momento la motivación del alumnado, abordándola tanto de manera general como de manera particular. Entendemos que la motivación de nuestros alumnos es ingrediente indispensable para el éxito de nuestra labor como docentes, que no es otro que conseguir el aprovechamiento máximo y el aprendizaje de los contenidos para la consecución de las competencias establecidas. Trataremos particularmente las inquietudes de cada sujeto en aras de conseguir tener un alumnado con ganas de aprender. 
+
+
+
+Concreción metodológica
+
+Teniendo en cuenta los principios metodológicos que nos hemos planteado, necesitamos estrategias de enseñanza que estén fundamentadas en la forma de aprender de nuestro alumnado para, de esta manera, poder hacer que nuestro trabajo sea eficaz, rentable y significativo.
+Dichas estrategias estarán en consonancia con el modelo de enseñanza constructivista que es el que mejor responde a las demandas del proceso de aprendizaje del alumnado y a su forma de construir significados sobre el conocimiento del mundo que le rodea.
+La posibilidad de utilización de actividades es amplia y variada y nuestra tarea como docentes será la toma de decisiones para seleccionar las actividades de enseñanza delimitadas en base a los siguientes criterios:
+Variación y complementariedad en su uso (actividades motivantes).
+Adecuación a las características de nuestro alumnado, tanto a nivel individual como de grupo (actividades significativas).
+Que sugieran tareas de búsqueda y aplicación por parte del alumnado (actividades funcionales).
+Que conecten en lo posible con problemas reales (actividades relacionadas con el entorno cotidiano).
+Dependencia, en su selección, de los objetivos generales y del tema objeto de estudio (actividades coherentes).
+Que estimulen el contacto profesorado-alumnado y alumnado-alumnado dentro y fuera del aula (actividades cooperativas).
+Al encontrarnos en un ciclo formativo la metodología deberá ser predominantemente práctica y encaminada a la realidad laboral que el alumno se encontrará cuando salga al mercado laboral y obviamente también encaminada a adquirir los conocimientos programados. 
+Cada unidad se verá desglosada en una serie de actividades. Utilizaremos símbolos para identificar visualmente la tipología de cada actividad, reservando también una marca especial para todas aquellas actividades que forman parte de la cadena crítica o columna vertebral de la unidad, y que serán de obligada ejecución para la consecución de los objetivos planteados.
+Podemos agrupar las dinámicas de trabajo utilizadas en los siguientes tipos de actividades:
+Actividad de introducción-motivación: gracias a la cual se motivará al alumnado y se creará la necesidad de aprendizaje en torno al contenido a tratar:
+Introducción a sesión, motivación de los contenidos en relación con el currículo del módulo profesional.
+En la última clase …: recopilación de conceptos y resolución de dudas de la sesión previa recopiladas en base a memorándum o test de cierre.
+¿Sabías que …? Artículo, noticia, oferta laboral, etc., breve e interesante relacionada con el módulo profesional con el objetivo de “enganchar y motivar” a los alumnos.
+Curioseando: Presentación/resumen de textos técnicos relacionados con la materia. 
+Actividad de conocimientos previos: con la que se pretende detectar en cada bloque de contenidos a trabajar los conocimientos que posee el alumnado sobre el mismo.
+Mapas conceptuales
+Lluvia de Ideas
+Cuestionarios
+Actividad de desarrollo: en ésta se pretende desarrollar el contenido de la unidad. En este sentido se realizarán tantas actividades de desarrollo como sean necesarias en cada unidad.
+Exposiciones: se intentarán minimizar y se utilizarán para contenidos conceptuales difícilmente abordables de manera cooperativa o individual. 
+Exposición y Demostración: Breves exposiciones de conceptos procedimentales acompañadas de ejemplos prácticos de aplicación.
+Puzle: intentaremos utilizar este tipo de dinámicas de grupo basadas en el aprendizaje cooperativo para trabajar los contenidos conceptuales, cuando la materia se pueda descomponer en apartados diferenciados y relativamente independientes que puedan ser tratados como piezas separadas.
+Investigando: dada una temática previamente trabajada a través de otro tipo de actividad, se propone una actividad de investigación referente a algún aspecto relacionado.
+Prácticas Guiadas: usada para la introducción de contenidos procedimentales, sirviendo de modelo para afrontar problemas de un determinado tipo.
+Actividades: catálogo de actividades de complejidad creciente para trabajar los contenidos, diferenciando aquellas que serán de entrega obligatoria y objeto de evaluación. Dentro de esta propuesta de actividades contemplaremos también actividades de refuerzo y de ampliación.
+Proyecto Software: los alumnos abordarán en grupos un proyecto auto incremental donde se irán poniendo en práctica los contenidos afianzados.
+Actividad de síntesis: en este tipo de actividad se pretende facilitar la comprensión y organización por parte del alumnado de las temáticas desarrolladas en cada unidad.
+Mapa mental resumen de ideas clave con herramientas distintas.
+Memorándum: resumen de los conceptos trabajados durante la sesión.
+Recopilación de dudas: registro de dudas individual y anónimo acerca de los conceptos tratados con objeto de identificar carencias generales y plantear medidas de refuerzo.
+Test resumen: breve test de conceptos tratados para determinar el grado de asimilación de los conceptos e identificar puntos de mejora.
+Actividad de evaluación: con ella se pretende evaluar el aprendizaje llevado a cabo por el alumnado durante el proceso de enseñanza-aprendizaje. Contemplaremos:
+Exámenes teórico-prácticos.
+Actividades entregables.
+
+De manera general, la dinámica de trabajo seguida en cada una de las sesiones de trabajo seguirá las pautas siguientes:
+
+Fase de Inicio:
+Enlace: el objetivo de esta fase es enlazar con las últimas sesiones a modo de introducción, recordando los últimos conceptos tratados y resolviendo las dudas recopiladas de interés general. Plantearemos actividades del tipo En la última clase. En esta fase, cuando se inicien nuevos bloques de contenido y no sea necesario retomar la sesión anterior, utilizaremos actividades del tipo Sabías que … para captar la atención del alumno.
+Orientación. En esta fase planteamos actividades de inicio y motivación con la intención de ir introduciendo así al alumnado a los contenidos que serán abordados.
+Fase de explicitación de ideas del alumnado. Seguiremos utilizando en esta fase actividades de inicio y motivación para identificar los conocimientos previos del alumnado en relación con los conceptos a tratar.
+Fase de Desarrollo: 
+Reestructuración y construcción de nuevos conocimientos. En esta fase se utilizarán actividades de desarrollo, que consistirán básicamente en exposiciones-demostraciones, puzles, actividades del tipo Investigando y prácticas guiadas.
+Aplicación de nuevos conocimientos. Podemos hablar aquí de actividades de desarrollo y de síntesis. La propuesta contemplará actividades con complejidad creciente de manera progresiva, para permitir que cada alumno evolucione a su ritmo en la realización de la propuesta de actividades
+Fase de Cierre: 
+Utilizaremos el final de la clase para plantear alguna actividad de síntesis, destacando el memorándum y la recopilación de dudas. 
+Abordaremos también en esta fase las actividades motivacionales de tipo Curioseando, donde los alumnos realizarán una breve exposición de un artículo de interés relacionado con las bases de datos, su aplicación, tendencias y futuro.
+
+Recursos didácticos
+
+Los principales recursos que se van a utilizar para poner en práctica las distintas actividades son:
+
+Recursos espaciales: En el IES utilizaremos fundamentalmente el aula. Las sesiones se distribuirán de tal forma que siempre se disponga de un periodo para la exposición oral del profesorado, otro para abordar aspectos prácticos y actividades, y un último momento para las actividades de cierre o síntesis. 
+
+Recursos materiales: Los materiales a utilizar serán:
+
+Un ordenador para el profesor o profesora con acceso a Internet y a red local. 
+Un ordenador para cada alumno o alumna, conectado a la red local del centro.
+Proyector con conexión al ordenador del profesor. 
+Pizarra blanca con rotuladores. 
+Equipamiento multimedia para las actividades que lo requieran. 
+Sistemas operativos: Microsoft Windows 7 y 10, Ubuntu 20.04 y Lubuntu 20.04, bien en instalación directa o en entorno virtual, con sus guías de administración y uso. 
+Servidores de red local con recursos didácticos compartidos a disposición de toda la comunidad educativa del centro con diversos niveles de acceso y mantenimiento. 
+Diversos programas informáticos especializados que se usarán según las necesidades formativas del módulo profesional:
+IDE Eclipse y Spring Tool Suite 
+Servidor de aplicaciones Apache Tomcat
+Framework de desarrollo Spring Boot
+Sistema gestor de base de datos H2, Mariadb
+Herramienta para la explotación del sistema gestor de base de datos dbeaver
+Plataforma en la nube para el despliegue de aplicaciones Heroku. 
+Moodle del módulo, donde se encuentran actividades, videos y apuntes del módulo profesional.
+Bibliografía de aula y de departamento.
+
+La bibliografía será presentada en el último apartado de la programación.
+
+Actividades extraescolares y complementarias
+
+Como actividades extraescolares y complementarias para realizar en el ciclo en el presente curso se tienen pensadas las siguientes:
+Asistencia a sesiones o talleres online que organizan algunas de las empresas multinacionales afincadas en el área metropolitana de Sevilla.
+
+
+Criterios y procedimiento de evaluación.
+
+Los Criterios de Evaluación (CE) constituyen el elemento curricular más importante para establecer el proceso de enseñanza-aprendizaje que permita alcanzar los resultados de aprendizaje establecidos.
+Comenzaremos por realizar una ponderación de cada resultado de aprendizaje, en función a la contribución que tiene a alcanzar la Competencia General del título y las Competencias Profesionales, Personales y Sociales asignadas para nuestro módulo a través de los Objetivos Generales.
+Esta ponderación la encontramos en la siguiente tabla:
+RA
+%
+RA1. Selecciona las arquitecturas y tecnologías de programación Web en entorno servidor, analizando sus capacidades y características propias.
+5
+RA2. Escribe sentencias ejecutables por un servidor Web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.
+10
+RA3. Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación.
+10
+RA4. Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+15
+RA5. Desarrolla aplicaciones Web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+10
+RA6. Desarrolla aplicaciones de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+10
+RA7. Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.
+20
+RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas.
+10
+RA9. Desarrolla aplicaciones Web híbridas seleccionando y utilizando librerías de código y repositorios heterogéneos de información.
+10
+
+Tabla 4 Ponderación Resultados de Aprendizaje. 
+A continuación, definiremos de cada RESULTADO DE APRENDIZAJE, una serie de CRITERIOS DE EVALUACIÓN que se refieren a él, y que son las guías que utilizaremos para su evaluación, definiendo lo que el alumnado debe saber, comprender y saber hacer. Además, cada criterio de evaluación determinará la elección de los instrumentos de evaluación que utilizaremos:
+RA1. Selecciona las arquitecturas y tecnologías de programación Web en entorno servidor, analizando sus capacidades y características propias.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han caracterizado y diferenciado los modelos de ejecución de código en el servidor y en el cliente Web.
+0,50%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Rúbrica
+X
+
+
+b) Se han reconocido las ventajas que proporciona la generación dinámica de páginas Web y sus diferencias con la inclusión de sentencias de guiones en el interior de las páginas Web.
+0,50%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Rúbrica
+X
+
+
+c) Se han identificado los mecanismos de ejecución de código en los servidores Web.
+0,50%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Rúbrica
+X
+
+
+d) Se han reconocido las funcionalidades que aportan los servidores de aplicaciones y su integración con los servidores Web.
+0,50%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Rúbrica
+X
+
+
+e) Se han identificado y caracterizado los principales lenguajes y tecnologías relacionados con la programación Web en entorno servidor.
+1,00%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica y oral
+Rúbrica
+X
+
+
+f) Se han verificado los mecanismos de integración de los lenguajes de marcas con los lenguajes de programación en entorno servidor.
+1,00%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica y oral
+Rúbrica
+X
+
+
+g) Se han reconocido y evaluado las herramientas de programación en entorno servidor.
+1,00%
+1
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica y oral
+Rúbrica
+X
+
+
+CONTRIBUCIÓN DEL RA 1 DEL
+5,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+RA2. Escribe sentencias ejecutables por un servidor Web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han reconocido los mecanismos de generación de páginas Web a partir de lenguajes de marcas con código embebido.
+1,00%
+2
+Portfolio ejercicios
+Prueba práctica
+Observación
+Lista de cotejo
+X
+
+
+b) Se han identificado las principales tecnologías asociadas.
+1,00%
+2
+Portfolio ejercicios
+Prueba práctica
+Observación
+Lista de cotejo
+X
+
+
+c) Se han utilizado etiquetas para la inclusión de código en el lenguaje de marcas.
+1,00%
+2
+Portfolio ejercicios
+Prueba práctica
+Observación
+Lista de cotejo
+X
+
+
+d) Se ha reconocido la sintaxis del lenguaje de programación que se ha de utilizar.
+1,00%
+2
+Portfolio ejercicios
+Prueba práctica
+Observación
+Lista de cotejo
+X
+
+
+e) Se han escrito sentencias simples y se han comprobado sus efectos en el documento resultante.
+1,25%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+f) Se han utilizado directivas para modificar el comportamiento predeterminado.
+1,25%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+g) Se han utilizado los distintos tipos de variables y operadores disponibles en el lenguaje.
+1,25%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+h) Se han identificado los ámbitos de utilización de las variables.
+1,25%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+CONTRIBUCIÓN DEL RA 2 DEL
+10,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+
+
+
+
+RA3. Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han utilizado mecanismos de decisión en la creación de bloques de sentencias.
+1,00%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+b) Se han utilizado bucles y se ha verificado su funcionamiento.
+1,50%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+c) Se han utilizado «arrays» para almacenar y recuperar conjuntos de datos.
+1,50%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+d) Se han creado y utilizado funciones.
+1,50%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+e) Se han utilizado formularios Web para interactuar con el usuario del navegador Web.
+1,50%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+f) Se han empleado métodos para recuperar la información introducida en el formulario.
+1,50%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+g) Se han añadido comentarios al código.
+1,50%
+2
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+CONTRIBUCIÓN DEL RA 3 DEL
+10,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+
+RA4. Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han identificado los mecanismos disponibles para el mantenimiento de la información que concierne a un cliente Web concreto y se han señalado sus ventajas.
+2,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+b) Se han utilizado sesiones para mantener el estado de las aplicaciones Web.
+2,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+c) Se han utilizado «cookies» para almacenar información en el cliente Web y para recuperar su contenido.
+2,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+d) Se han identificado y caracterizado los mecanismos disponibles para la autentificación de usuarios.
+2,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+e) Se han escrito aplicaciones que integren mecanismos de autentificación de usuarios.
+3,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+f) Se han realizado adaptaciones a aplicaciones Web existentes como gestores de contenidos u otras.
+2,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+g) Se han utilizado herramientas y entornos para facilitar la programación, prueba y depuración del código.
+2,00%
+6
+Portfolio ejercicios
+Prueba práctica
+Ejecución práctica
+Plantilla corrección
+X
+
+
+CONTRIBUCIÓN DEL RA 4 DEL
+15,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+
+RA5. Desarrolla aplicaciones Web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han identificado las ventajas de separar la lógica de negocio de los aspectos de presentación de la aplicación.
+1,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+b) Se han analizado tecnologías y mecanismos que permiten realizar esta separación y sus características principales.
+1,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+c) Se han utilizado objetos y controles en el servidor para generar el aspecto visual de la aplicación Web en el cliente.
+2,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+d) Se han utilizado formularios generados de forma dinámica para responder a los eventos de la aplicación Web.
+2,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+e) Se han identificado y aplicado los parámetros relativos a la configuración de la aplicación Web.
+1,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+f) Se han escrito aplicaciones Web con mantenimiento de estado y separación de la lógica de negocio.
+1,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+g) Se han aplicado los principios de la programación orientada a objetos.
+1,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+h) Se ha probado y documentado el código.
+1,00%
+4
+Portfolio ejercicios
+Prueba práctica
+Observación
+Ejecución práctica
+Lista de cotejo
+X
+
+
+CONTRIBUCIÓN DEL RA 5 DEL
+10,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+
+
+RA6. Desarrolla aplicaciones de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han analizado las tecnologías que permiten el acceso mediante programación a la información disponible en almacenes de datos.
+1,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+b) Se han creado aplicaciones que establezcan conexiones con bases de datos.
+1,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+c) Se ha recuperado información almacenada en bases de datos.
+1,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+d) Se ha publicado en aplicaciones Web la información recuperada.
+2,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+e) Se han utilizado conjuntos de datos para almacenar la información.
+2,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+f) Se han creado aplicaciones Web que permitan la actualización y la eliminación de información disponible en una base de datos.
+1,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+g) Se han utilizado transacciones para mantener la consistencia de la información.
+1,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+h) Se han probado y documentado las aplicaciones.
+1,00%
+5
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Ejecución práctica
+Observación
+Plantilla corrección
+X
+
+
+CONTRIBUCIÓN DEL RA 6 DEL
+10,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+
+RA7. Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han reconocido las características propias y el ámbito de aplicación de los servicios Web.
+2,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+b) Se han reconocido las ventajas de utilizar servicios Web para proporcionar acceso a funcionalidades incorporadas a la lógica de negocio de una aplicación.
+3,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+c) Se han identificado las tecnologías y los protocolos implicados en la publicación y utilización de servicios Web.
+3,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+d) Se ha programado un servicio Web.
+3,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+e) Se ha creado el documento de descripción del servicio Web.
+3,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+f) Se ha verificado el funcionamiento del servicio Web.
+3,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+g) Se ha consumido el servicio Web.
+3,00%
+7
+Portfolio ejercicios
+Prueba práctica
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+CONTRIBUCIÓN DEL RA 7 DEL
+20,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han identificado las diferencias entre la ejecución de código en el servidor y en el cliente Web.
+1,00%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+b) Se han reconocido las ventajas de unir ambas tecnologías en el proceso de desarrollo de programas.
+1,50%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+c) Se han identificado las librerías y las tecnologías relacionadas con la generación por parte del servidor de páginas Web con guiones embebidos.
+1,50%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+d) Se han utilizado estas tecnologías para generar páginas Web que incluyan interacción con el usuario en forma de advertencias y peticiones de confirmación.
+1,50%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+e) Se han utilizado estas tecnologías, para generar páginas Web que incluyan verificación de formularios.
+1,50%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+f) Se han utilizado estas tecnologías para generar páginas Web que incluyan modificación dinámica de su contenido y su estructura.
+ 1,50%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+g) Se han aplicado estas tecnologías en la programación de aplicaciones Web.
+1,50%
+8
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+CONTRIBUCIÓN DEL RA 8 DEL
+10,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+
+RA9. Desarrolla aplicaciones Web híbridas seleccionando y utilizando librerías de código y repositorios heterogéneos de información.
+Trim
+CRITERIOS DE EVALUACIÓN
+%
+UD
+ACTIVIDAD
+TÉCNICA
+INSTRUMENTO
+1º
+2º
+a) Se han reconocido las ventajas que proporciona la reutilización de código y el aprovechamiento de información ya existente.
+1,00%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+b) Se han identificado librerías de código y tecnologías aplicables en la creación de aplicaciones Web híbridas.
+1,50%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+c) Se ha creado una aplicación Web que recupere y procese repositorios de información ya existentes.
+1,50%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+d) Se han creado repositorios específicos a partir de información existente en Internet y en almacenes de información.
+1,50%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+e) Se han utilizado librerías de código para incorporar funcionalidades específicas a una aplicación Web.
+1,50%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+f) Se han programado servicios y aplicaciones Web utilizando como base información y código generados por terceros.
+1,50%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+g) Se han probado, depurado y documentado las aplicaciones generadas.
+1,50%
+9
+Caso práctico
+Observación
+Ejecución práctica
+Lista de cotejo
+
+
+X
+CONTRIBUCIÓN DEL RA 9 DEL
+10,00%
+A LA CALIFICACIÓN FINAL DEL MP
+
+
+Evaluación
+
+Aplicado a los procesos de enseñanza-aprendizaje, la evaluación puede considerarse como toda acción orientada a la obtención de información con el objetivo de:
+Optimizar el propio proceso de enseñanza y aprendizaje, entendiendo que no hay enseñanza si no se produce aprendizaje.
+Optimizar los resultados del proceso: el aprendizaje.
+Evitar efectos no deseados: desmotivación, abandonos o aprendizajes insuficientes.
+Por tanto, la evaluación es consustancial a las acciones de enseñar y aprender; no es un apéndice de ellas, orienta la planificación docente y dirige su desarrollo y apoya el acto de aprender.
+El objetivo de la evaluación es pues doble: por un lado se evaluarán los aprendizajes del alumnado y por otro la enseñanza del profesorado.
+
+Evaluación de la práctica docente
+Atendiendo al doble objetivo de la evaluación, tras analizar cómo se evaluarán los aprendizajes del alumnado vamos a analizar a continuación cómo llevaremos a cabo la evaluación de la enseñanza del profesorado.
+Desde esta vertiente habremos de contemplar la práctica docente de manera general y la programación didáctica de manera particular, como instrumento vehicular para nuestra propuesta de enseñanza.
+
+Evaluación de la práctica docente	
+
+Para la evaluación de la práctica docente utilizaremos los siguientes instrumentos:
+Cuestionarios a contestar por los propios alumnos. En el anexo I se propone un modelo de cuestionario de evaluación.
+Reflexión del propio docente.
+Contraste de experiencias con otros compañeros.
+Es fundamental que el profesorado esté en continuo aprendizaje tanto en las materias curriculares como en las nuevas herramientas y metodologías a aplicar para la práctica de la enseñanza, más aún en las materias relacionadas con la familia profesional de Informática y Comunicaciones. Para ello estaremos en contacto con las empresas del entorno para conocer las necesidades del sector y adaptar las herramientas, metodologías y contenidos en el marco de la normativa vigente a dichas necesidades. Se revisará también la oferta de cursos del CEP que pueda interesar.
+
+Mejora de la programación didáctica
+
+Atendiendo a las pautas de análisis retrospectivo y mejora continua que tratamos de inculcar en nuestros alumnos, no debemos dejar de lado que es de gran importancia realizar revisiones de los resultados obtenidos al desplegar nuestra propuesta didáctica siguiendo unas pautas bien definidas y manteniendo un espíritu crítico constructivo con la práctica docente de cara a mejorar los resultados de aprendizaje de nuestro alumnado. 
+Para ello llevaremos a cabo al finalizar cada trimestre la revisión y el rediseño de la programación didáctica según el proceso que hemos planteado en el anexo II. Este proceso se utilizará tanto para la revisión como el diseño inicial de la programación didáctica de un módulo profesional. El objetivo de este proceso es diseñar, revisar y mejorar la propuesta de programación de manera continua, en base a la experiencia de ejercicios anteriores. 
+Como principal instrumento para llevar a cabo este análisis utilizaremos un cuaderno de evaluación de las actividades y un cuaderno de evaluación de las unidades didácticas donde iremos registrando las fichas de evaluación interna utilizadas. En el anexo III se muestra dicha ficha.
+
+Evaluación de Aprendizaje del alumnado
+
+La evaluación de competencias busca verificar la habilidad del alumno para afrontar situaciones concretas, en las que la persona debe utilizar sus conocimientos (relacionados con el saber, saber hacer y saber estar) y manifestar un comportamiento para resolver situaciones determinadas. En tal verificación no sólo se tendrá en cuenta el desarrollo de unas operaciones o acciones concretas, sino que es importante comprobar la capacidad de afrontar situaciones diferentes y la transferencia de “saberes” a otros contextos.
+La evaluación del aprendizaje es un factor fundamental para garantizar la calidad del proceso de enseñanza y aprendizaje, ya que es una fuente de información que permite conocer el desarrollo de dicho proceso, los logros y debilidades de los resultados obtenidos y, por tanto, la posibilidad de innovar y de mejorar de forma continua. Por tanto, la evaluación ha de ser tenida en cuenta como una herramienta más del proceso de enseñanza aprendizaje, e ir orientada a la mejora continua del mismo, favoreciendo el aprendizaje y autonomía de los alumnos y que estos no la vean como un mero acto de calificación, ya que esa corrección que se produce en la evaluación continua produce una retroalimentación que guía el profesor.
+Desde una perspectiva práctica, la evaluación debe ser:
+Individualizada, centrándose en las particularidades de cada alumno y en su evolución.
+Integradora, para lo cual tiene en cuenta las características del grupo a la hora de seleccionar los criterios de evaluación.
+Cualitativa, ya que además de los aspectos cognitivos, se evalúan de forma equilibrada los diversos niveles de desarrollo del alumno.
+Orientadora, dado que aporta al alumno la información precisa para mejorar su aprendizaje y adquirir estrategias apropiadas.
+Continua, entendiendo el aprendizaje como un proceso continuo.
+
+Criterios de evaluación
+
+La evaluación de competencias es compleja, pero se cuenta con el Diseño Curricular de cada módulo profesional, en el que se hallan la descripción de los Resultados de Aprendizaje y sus respectivos Criterios de Evaluación, que representan las capacidades (complejas y simples) que deben ser adquiridas por el alumnado durante el desarrollo del módulo, así como con la descripción de los contenidos (conceptuales, procedimentales y actitudinales). En todos estos elementos se debe apoyar la labor docente, constituyendo esta información la referencia imprescindible en la planificación de la evaluación. 
+En nuestro caso, dichos criterios se han ido concretando para cada unidad didáctica, tomando como referencia los asociados al módulo profesional según el Anexo I de la Orden de 16 de junio de 2011.
+En el apartado 4 de esta programación se han detallado los criterios de evaluación de cada uno de los resultados de aprendizaje con su peso específico y los instrumentos de evaluación que utilizaremos.
+
+Tipos, momentos y procedimiento de evaluación
+
+Los momentos de evaluación vendrán determinados por los distintos tipos de evaluación:
+
+Evaluación inicial o diagnóstica: Su objetivo es detectar el nivel de conocimientos y habilidades previos del alumno y sus carencias, para que el proceso de enseñanza aprendizaje se oriente a sus necesidades.
+
+Evaluación formativa: Su objetivo es detectar las dificultades que puedan surgir a lo largo del proceso de enseñanza-aprendizaje, si se aprecia que no se están cumpliendo los objetivos o que estos no se alcanzan en la medida de lo esperado inmediatamente se han de realizar los cambios oportunos en el proceso para corregirlo, se reajusta. Para que esta evaluación sea eficaz se ha de realizar a lo largo de todo el curso lectivo y antes de que este finalice, ha de ser continuada y estar al servicio del alumno para facilitar su aprendizaje y mejora. Pero la evaluación formativa no sólo se caracteriza por ser continuada, sino que también es criterial, y por tanto se caracteriza por evaluar los logros del alumno individualmente, sin compararlo con el grupo.
+
+Evaluación sumativa: Es aquella que se realiza para comprobar la consecución de los objetivos previamente marcados, valorar los resultados y calificarlos. Tienen un carácter administrativo, pues en función de ella se establece la promoción o no del alumno y si titula o no. Su función primordial es de selección.
+De manera general, atendiendo a los distintos tipos de evaluación, podemos establecer que la evaluación diagnóstica se produce en el momento inicial del proceso de enseñanza-aprendizaje, la evaluación formativa se produce a lo largo del proceso, de forma continua y la evaluación sumativa se produce al final del mismo.
+Según el procedimiento de evaluación establecido en la orden de 29 de septiembre de 2010, concretaremos estas evaluaciones de la siguiente forma:
+Evaluación Inicial: realizaremos un cuestionario inicial que servirá de base para llevar a cabo esta evaluación al comienzo de la unidad 1. Adicionalmente, previamente a comenzar con un bloque de contenidos, utilizaremos actividades de conocimientos previos como mapas conceptuales, lluvias de ideas y cuestionarios, con el objeto de detectar los conocimientos previos en la materia por parte del alumnado.
+Evaluaciones orientativas: realizaremos una por trimestre, 1ª a finales de diciembre y 2ª antes de Semana Santa. 
+Recuperaciones: La recuperación o la mejora de nota de los resultados de aprendizaje no superados será posible mediante la realización de pruebas o actividades específicas planteadas tras realizar cada una de las evaluaciones parciales.
+
+Instrumentos de evaluación
+
+Se emplearán los siguientes instrumentos para medir el progreso de los alumnos en cada uno de sus aspectos:
+
+Entregas de Actividades de Enseñanza/Aprendizaje: asociadas a cada unidad didáctica será publicado un catálogo de actividades, de entre las cuales habrá algunas tipificadas como de entrega obligatoria y evaluables. Estas actividades podrán ser de diversa índole: 
+Prácticas guiadas.
+Presentaciones.
+Actividades Investigación.
+Actividades prácticas.
+Resúmenes de contenidos.
+Etc.
+
+Para puntuar estas actividades tendremos en cuenta la rúbrica correspondiente y se podrán realizar de forma individual o grupal:
+
+Trabajo individual.
+Trabajo en grupo.
+
+Prueba Escrita: se tratará de pruebas de evaluación de los contenidos conceptuales y procedimentales tratados relacionados con los criterios de evaluación de cada resultado de aprendizaje asociado a la unidad didáctica evaluada.
+
+Diario de clase: la observación diaria quedará reflejada en el diario de clase del profesor.
+
+Calificación
+
+La calificación del módulo se hará conforme a las siguientes reglas que pasamos a concretar. 
+Será necesario aprobar todos los resultados de aprendizaje para conseguir superar el módulo.
+Asociaremos a cada resultado de aprendizaje una nota entre 0 y 10, de manera que consideraremos como aprobado el RA cuando la nota sea mayor o igual que 5.
+La nota de un resultado de aprendizaje se calculará en base a las notas de cada uno de los criterios de evaluación de dicho RA y su peso específico, detallado en el apartado 4.
+Existirá un instrumento de evaluación asociado a cada criterio de evaluación, de manera que la nota del criterio de evaluación se obtendrá de dicho instrumento. 
+La nota de las evaluaciones parciales se corresponderá con la media ponderada de los resultados de aprendizaje completados en dicho periodo.
+Si un alumno no supera alguno de los resultados de aprendizaje del módulo evaluados durante la evaluación parcial, la nota del módulo en dicha evaluación será como máximo de un 4. En ningún caso podrá aprobar la evaluación parcial si tiene algún resultado de aprendizaje suspenso.
+
+La nota final del módulo se corresponderá con la media ponderada de todos los resultados de aprendizaje, siendo condición indispensable para aprobar que todos los resultados de aprendizaje hayan sido aprobados.
+En las actividades evaluables grupales se valorará individualmente la participación e implicación de cada uno de los integrantes.
+En las actividades evaluables grupales se debe mantener una asistencia obligatoria para que se pueda realizar adecuadamente el trabajo colaborativo. Los alumnos de la FP Dual están excluidos de esta regla en los días que asistan a la empresa.
+Utilizaremos una hoja de cálculo para el registro de la evaluación donde se visualizará la trazabilidad de los resultados de aprendizaje y criterios de evaluación con respecto a las unidades didáctica donde han sido trabajados y los instrumentos de evaluación utilizados. 
+Esta hoja de cálculo dispondrá de una pestaña resumen por evaluación con la nota asociada a cada criterio de evaluación y a cada resultado de aprendizaje. 
+Esta hoja nos permitirá en todo momento ser consciente de los resultados obtenidos y de los criterios donde debe mejorar un alumno para alcanzar los resultados.
+Asimismo, la hoja contendrá un detalle de los instrumentos utilizados, con un código identificativo, breve descripción, fecha de realización y fecha final de entrega.
+
+Recuperación y mejora de nota
+
+La recuperación o la mejora de nota de los resultados de aprendizaje no superados será posible mediante la realización de pruebas o actividades específicas planteadas tras realizar cada una de las evaluaciones parciales.
+Será obligatoria la entrega de las actividades pendientes asociadas a cada uno de los resultados para poder optar a su recuperación, permitiendo nuevas entregas a los alumnos que ya la hubiesen entregado previamente.
+Los alumnos que no hayan aprobado las dos primeras evaluaciones o deseen mejorar los resultados obtenidos tendrán la obligación de asistir a las clases que se organicen al efecto tras la segunda evaluación, como preparación para las pruebas correspondientes previas a la sesión ordinaria de evaluación y calificación.
+
+
+
+
+Medidas de Atención a la Diversidad
+Medidas generales de atención a la diversidad
+Los conocimientos iniciales del alumnado son muy diferentes y, por tanto, la situación de partida es también diferente para todos ellos. Por otro lado, los conceptos y destrezas que debe adquirir el alumno suponen para algunos de ellos cierto grado de complejidad en esta asignatura. 
+Es preciso detectar la diversidad del alumnado, tanto desde las evaluaciones iniciales como desde la observación a lo largo del desarrollo didáctico de la materia, y clasificarla en función de sus manifestaciones: desmotivación, limitaciones y superdotaciones personales, etc.
+Partiendo de la realidad del aula, el proceso comenzará por detectar aquellas carencias de los alumnos en distintos tipos de contenidos (conceptos mínimos, procedimientos erróneos, actitudes inadecuadas) y proponer medidas que ayuden a corregir y a superar tales deficiencias.
+Con respecto a los conceptos, las actuaciones deben ir encaminadas por una doble vertiente:
+Alumnos que no dominan (o ni siquiera conocen) los contenidos Conceptos mínimos para garantizar el aprendizaje de los nuevos conceptos.
+Alumnos en los que se aprecian problemas de aprendizaje.
+En el primer caso, se propondrán actividades que permitan al alumno recuperar y/o alcanzar el nivel mínimo que le permita un aprovechamiento satisfactorio de los nuevos contenidos. Es posible que tales conceptos no entren dentro del ámbito del  departamento didáctico. En tal caso, se propondrá al equipo docente del grupo en cuestión su opinión sobre la necesidad de adaptación curricular en esta materia, que sale del ámbito de nuestra competencia.
+En el segundo caso, la solución es más compleja ya que, en primer lugar, es necesario conocer el origen del problema y sus posibles soluciones, función que claramente corresponde al Departamento de Orientación. Por tanto, las medidas que se adopten se concretarán en medidas específicas de acceso, según sea el caso, en función de las recomendaciones del equipo orientador.
+Dado que es más que probable que los niveles sean distintos, se planifican varios recursos que se pueden emplear para atender esta diversidad mediante una atención individualizada de los alumnos que lo necesiten, mediante propuestas del tipo:
+Realización de las actividades propuestas al final de cada Unidad, que siguen un orden creciente de dificultad. 
+Integración del alumnado con problemas en grupos de trabajo mixtos y diversos para que en ningún momento se sientan discriminados. Si se crea un buen ambiente de grupo, los mismos compañeros y compañeras se ayudarán entre ellos favoreciendo el proceso de aprendizaje.
+Apoyo de los profesores cuando lo consideren necesario y en la forma que se estime oportuna.
+Lectura del material complementario (libros, apuntes, ejercicios resueltos, artículos, etc.).
+Realización de actividades complementarias propuestas y/o coordinadas por los profesores.
+Elaboración de trabajos haciendo uso de la capacidad creativa y los medios y recursos con que cuenta el centro.
+Planteamiento por parte de los profesores de ejercicios y cuestionarios al alumno con la consiguiente supervisión.
+Exposición de algunos de los trabajos que se van desarrollando en las clases prácticas.
+Evaluación individual de cada alumno al que expone, calificando los siguientes aspectos: cumplimiento de objetivos, motivación, facilidad de palabra, medios audiovisuales utilizados, creatividad, originalidad, etc.
+
+
+Atención al alumnado con Necesidades Educativas Especiales
+Los alumnos con Necesidades Educativas Especiales (NEE), son aquellos que presentan déficit sensorial, mental, motor, trastornos del desarrollo, trastorno de la personalidad, dificultades de aprendizaje y superdotados. Para estos alumnos, no pudiéndose realizar adaptaciones curriculares, se adaptarán los medios y los tiempos tras consultar con los servicios de orientación del centro. 
+Medidas metodológicas que podemos llevar a cabo en nuestras clases:
+Estructurar específicamente todas las tareas para facilitar la comprensión, eliminando al principio la información no relevante de los enunciados.
+Secuenciar la mecánica, descomponer y comentar detalladamente los pasos de realización del modelado, diseño o documentación de la bases de datos trabajando cualquier explicación de la forma más concreta posible.
+Reforzar las presentaciones visuales con explicaciones verbales detalladas de los pasos a seguir para resolver un problema.
+Potenciar aún más su autonomía y gestión del tiempo recompensando su esfuerzo y el entusiasmo en el desarrollo de las tareas y ejercicios.
+Uso compartido de apps Google que puedan facilitarle su labor en su gestión autónoma.
+Organizar inicialmente tareas individuales e integrar poco a poco en tareas grupales garantizando su inclusión en el aula.
+En las pruebas o ejercicios planteados indicarle un aviso ya sea sonoro o visual del tiempo que queda para su finalización, asesorando en todo momento para que comprenda todo lo que se pregunta.
+
+
+Formación Profesional DUAL
+
+La principal finalidad y objetivo de la puesta en marcha del proyecto de FP Dual para el CFGS de DAW es la de aumentar la inserción laboral, la implicación y motivación del alumnado, la actualización técnica del profesorado a través de contacto con la empresa y la adaptación de las enseñanzas a las necesidades del entorno productivo. Con todo ello se ayudará a alcanzar los objetivos de la Estrategia Industrial de Andalucía.
+Desde el curso 2015-2016 el IES Alixar está en marcha un proyecto de FP Dual para el CFGM de SMR que está ya asentado, por lo que el Dpto y el Equipo Directivo tienen experiencia en la gestión de proyectos de FP Dual. El curso 2017-2018 se implantó el CFGS de DAW en nuestro centro, habiéndose completado su puesta en marcha. 
+En 2ºDAW contamos con 4 alumnos (3 pertenecientes al grupo de la tarde y 1 al grupo de la mañana) que estarán en la empresa los martes, miércoles y jueves. Por este motivo se han programado actividades prácticas de los contenidos teóricos los lunes para que puedan trabajar con el resto de los compañeros.
+
+Temporalización
+
+El alumnado comenzará desde el 25 de octubre 2022 al 16 de febrero 2023, 3 días a la empresa, martes, miércoles y jueves.
+
+
+Formación inicial
+
+Para el alumnado en formación DUAL y tal y como refleja el proyecto correspondiente, el alumnado deberá de tener superado estos Resultados de Aprendizaje antes de su incorporación a la empresa:
+Módulo: 
+Horas totales
+Horas semanales
+Horas formación inicial
+Horas alternancia empresa
+Horas alternancia centro
+DESARROLLO WEB EN ENTORNO SERVIDOR (DWES)
+126 h
+6 h
+22 h
+48 h
+4 h / sem
+78 h
+2 h / sem
+Formación Inicial - Resultados de aprendizaje
+RA1. Selecciona las arquitecturas y tecnologías de programación Web en entorno servidor, analizando sus capacidades y características propias. 
+RA2. Escribe sentencias ejecutables por un servidor Web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas. 
+Sintaxis básica del lenguaje del RA3. Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación. 
+Conceptos básicos de cookies y sesiones del RA4. Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones. 
+Concepto modelo vista controlador del RA5. Desarrolla aplicaciones Web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio. 
+Conceptos iniciales del RA6. Desarrolla aplicaciones de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+Identificación, ventajas e inconvenientes de los protocolos y tecnologías de los servicios web del RA7. Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.
+Conceptos servidor y cliente e interconexión entre el código cliente y el servidor del RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas.
+Conceptos de reutilización de código del RA9. Desarrolla aplicaciones Web híbridas seleccionando y utilizando librerías de código y repositorios heterogéneos de información.
+
+
+
+Formación en Alternancia en la Empresa
+
+
+Formación en Alternancia en la empresa
+Actividades
+Concreciones (Tareas)
+Resultados de Aprendizaje
+AF14. Programación de aplicaciones que integran mecanismos de autenticación de usuarios.
+Planificación de roles de usuario.
+Identificación de los requisitos y tiempos de acceso.
+Implementación de restricciones de acceso por usuarios y roles.
+Integración de los mecanismos de autenticación en aplicaciones existentes.
+RA2. Escribe sentencias ejecutables por un servidor Web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas. 
+RA3. Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación.
+AF15. Realización de adaptaciones a aplicaciones web existentes en la empresa.
+Análisis del código y estudio de la funcionalidad de aplicaciones existentes.
+Identificación de errores y posibilidades de mejora.
+Resolución de errores en aplicaciones existentes.
+Desarrollo e integración de nuevas funcionalidades en aplicaciones existentes a partir de especificaciones.
+RA3. Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación.
+RA4. Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+AF10. Desarrollo de páginas dinámicas multinavegador apoyadas en frameworks
+Desarrollo y utilización de componentes que modifiquen la estructura del documento.
+Asociación de acciones a eventos del modelo.
+Adaptación de aplicaciones a diferentes navegadores.
+RA4. Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+AF16. Desarrollo de lógica de negocio con frameworks para la capa del servidor (pe. Spring Framework).
+Revisión de las reglas de negocio.
+Implementación de clases de la lógica de negocio.
+Desarrollo de lógica de negocio mediante el uso de servicios y repositorios (pe. de Spring).
+Gestionar la transaccionalidad de la lógica de negocio mediante componentes específicos del framework (pe. Spring Transaction Manager).
+RA4. Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones. 
+RA5. Desarrolla aplicaciones Web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+AF17. Desarrollo de la capa de acceso a datos en el servidor.
+Implementación de la lógica de acceso a datos mediante frameworks ORM o APIs específicos (pe. Hibernate o JDBC).
+Utilización de patrones para el acceso a datos (pe. el patrón DAO).
+RA6. Desarrolla aplicaciones de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+AF18. Realización de despliegues manuales sobre un contenedor (pe. sobre un contenedor de servlets).
+Modificar descriptores de despliegue.
+Creación de archivos de despliegue de aplicaciones Web (pe. WARs).
+Despliegue de aplicaciones en servidores y/o contenedores de aplicaciones Web (pe. Tomcat/Weblogic/JBoss/IIS/etc.).
+Despliegue de archivos de despliegue de aplicaciones Web mediante consola de comandos.
+Prueba y depuración de módulos y servicios Web desplegados en contenedores (pe. servlets)
+RA7. Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.
+AF19. Programación y verificación de servicios Web.
+Desarrollo API REST (pe. con Spring Boot).
+Verificación del funcionamiento de los endpoint.
+Consumo de servicios web propios y de terceros.
+RA7. Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.
+RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas.
+AF13. Utilización de librerías y repositorios de información de terceros mediante aplicaciones Web.
+Análisis de librerías existentes en los repositorios de código de la empresa.
+Integración continua de código mediante software específico (pe. Jenkins).
+Reutilización y mejora de componentes existentes.
+Evaluación de la calidad del código mediante software específico (pe. Sonar).
+RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas
+AF11. Integración de tecnologías cliente en el lado servidor.
+Validación de formularios en el lado servidor.
+Desarrollo de mecanismos de intercambio de información entre cliente y servidor.
+Creación de avisos, confirmaciones y peticiones entre servidor y cliente.
+RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas. 
+RA9. Desarrolla aplicaciones Web híbridas seleccionando y utilizando librerías de código y repositorios heterogéneos de información.
+
+
+Formación en Alternancia en el Centro educativo
+
+Formación en Alternancia en el centro – Resultados de Aprendizaje
+RA5. Desarrolla aplicaciones Web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+RA6. Desarrolla aplicaciones de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+RA7. Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.
+RA8. Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marca
+
+
+El alumnado tendrá acceso a la plataforma AticaFP:
+https://atica.iessoterohernandez.es/
+donde él mismo registra su actividad diaria y periódicamente será revisado por el tutor docente y laboral. 
+El tutor docente o responsable de seguimiento realizará entrevistas semanales con el alumno donde éste transmite lo aprendido en los últimos días. Con el tutor docente existirá una comunicación constante vía email y telefónica durante su estancia en la empresa, gracias a lo cual el alumno también podrá expresar de una manera más inmediata los conocimientos adquiridos.
+Así mismo, el profesorado que realice el seguimiento de un alumnado con la empresa tendrá reuniones con la empresa en donde coordinará con el tutor laboral las tareas de aprendizaje que el alumno desarrollará en la empresa. 
+El tutor laboral valorará cada actividad realizada por los alumnos a través de la plataforma AticaFP según la siguiente escala:
+
+Una vez valoradas las actividades, y según nuestro proyecto dual, habrá una traducción de dichas valoraciones con los RAs de cada módulo y finalmente una nota del 1 al 10 correspondiente a la valoración del alumno en cada módulo en la empresa.
+Por último, cada profesor del módulo realizará una evaluación del alumno durante su estancia en el centro educativo en función del número de actividades y tareas que haya ido realizando.
+La nota final será la media ponderada entre la nota de su estancia en la empresa y su estancia en el centro educativo.
+
+Renuncia FP
+
+En caso de que un alumnado renunciara o causara baja del proyecto, se realizará un informe (adenda al proyecto) recogiendo los motivos y:
+Si es una baja definitiva del ciclo, se considera un abandono que reflejamos en las memorias junto a las justificaciones que para ello se hayan dado.
+
+En el caso de que sea una baja del proyecto de FP Alternancia y el alumnado pasará a la modalidad presencial, se estudiarían los contenidos que no cursó o alcanzó en la empresa para impartirlos en el centro y así pudiera superarlos. Para ello se realizará un programa individualizado de recuperación donde se reflejarán los resultados de aprendizaje no superados y las actividades necesarias para su seguimiento y evaluación. Dependiendo del tiempo disponible hasta final de curso, este programa definirá el periodo de realización de estas tareas, de manera que, si es posible se desarrollen en el periodo normal de clase o el mes de junio en primer curso, en donde los alumnos/as pueden recuperar contenidos, o en el tercer trimestre mientras los alumnos/as están en la FCT en segundo curso.
+
+Bibliografía
+
+Martínez, D. R., Aranda, P. J. V., & Bosch, V. T. (2018). Microservicios Un enfoque integrado. Ra-Ma Editorial.
+
+Deblauwe, W. (2021). Taming Thymeleaf: Practical guide to building a web application with Spring Boot and Thymeleaf.
+
+Sierra, F. J. C. (2010). Java 2. Curso de programación (Vol. 2). Sextil Online LLC.
+
+Gertrudix, J. M. V. (2022). Java 17 Programación Avanzada. Ra-Ma Editorial.
+Pérez Martínez, E., & Altadill Izura, P. X. (2018). Spring 5. Editorial ANAYA.
+
+Egido García, R., & Martín Sierra, A. (2017). Curso Avanzado de Programación en Java EE: Struts, JSF, Ajax, EJB, JPA (Sexta edición). Syncrom España Solutions.
+
+Gourley, D., & Totty, B. (2002). HTTP: the definitive guide. " O'Reilly Media, Inc.".
+
+Kleppmann, M. (2022). Diseño de aplicaciones mediante el uso intensivo de datos. Marcombo.
+
+
+
+Páginas webs de información complementaria:
+Mozilla Development Network (MDN): https://developer.mozilla.org/es/docs/Learn/Server-side
+
+Heroku:
+https://www.heroku.com/
+
+
+
+
